@@ -1,0 +1,9 @@
+- **GLib**: a C library composed of three layers:
+  - **GLib**: an homonymous low-level general-purpose utility C library
+  - **GObject**: a GLib-based object system including the type system **GType**
+  - **GIO**: a higher-level C library, based on both GLib and GObject, that provides useful classes for general purpose I/O, networking, IPC, settings, and other high level application functionality
+- **GTK**: Widget Toolkit based on the GLib bundle.
+- **GNOME**: May refer to either
+  - the **GNOME Desktop Environment**, which is based on GTK,
+  - the **GNOME Project**, a community of both volunteers and paid contributors, the largest corporate contributor being Red Hat, behind the development of the GNOME Desktop Environment
+  - or the **GNOME Foundation**, a non-profit organization based in California, United States, mainly set up to deal with administrative tasks, press interest and to coordinate the efforts in the GNOME project.
