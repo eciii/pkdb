@@ -1,0 +1,19 @@
+**About MariaDB**
+
+In the past, MySQL and MariaDB came by default with some insecure configuration (default root password, anonymous user, etc). To secure the installation in production environments it was advised to execute the `mysql_secure_installation` script (a shell script). Nowadays, at least in Debian, MariaDB installations are secure by default and the execution of the `mysql_secure_installation` script is not needed anymore.
+
+Nonetheless it is very instructive to inspect what the script did, what changed in the new installations, and why the script is not needed anymore. An analysis of what the script did can be found [here](https://bertvv.github.io/notes-to-self/2015/11/16/automating-mysql_secure_installation/). An official explanation of the new changes can be found [here](https://mariadb.com/kb/en/authentication-from-mariadb-104/). A summary:
+
+- MariaDB comes with three databases by default: `mysql`, `information_schema` and `performance_schema`. Information like users and permissions are stored in the `mysql` database.
+- Previously a test database, a test user and an anonymous user were also created by default. The `mysql_secure_installation` script deleted all of them.
+- User information was stored in a table called `users` in the `mysql` database. Now this table is just a view of another table, the `global_priv` table, which is the one that now holds user information. But this change induced a bug (see [here](https://jira.mariadb.org/browse/MDEV-19650)) when a user wanted to rename root, supposedly for more security. Thus a new default user `mariadb.sys` was added with just enough permissions to handle the `users` view. My opinion here is that if a specific user wanted to rename root they should do this work by themselves, instead of adding and rolling out a new user to all MariaDB installations worldwide. In other words, the `mariadb.sys` user should not exist, it is just an artifact of a very specific example of security by obscurity.
+- Previously the two all-powerful users, `root` and `mysql` were configured by default to allow network logins (via TCP/IP) with a default password. Now these users are configured by default to allow logins using Unix sockets from the corresponding OS user. TCP/IP logins are still configured but with an expired password.
+
+**About icinga2-ido-mysql**
+
+Since Icinga2 supports two database engines, MySQL/MariaDB and PostgreSQL, the installation of Icinga2 in Debian must expose this flexibility to the users. This is achieved by providing two additional packages, one for each database  engine. For MySQL/MariaDB the package is called `icinga2-ido-mysql`. The installation of this package must do two things automatically:
+
+- Install specific configuration files and enable the `ido-mysql` feature. This is done using the [debconf](https://packages.debian.org/stable/debconf) and [ucf](https://packages.debian.org/stable/ucf) packages in the maintainer scripts.
+- Create the icinga2 database user and create and populate the icinga2 database. This is done using [dbconfig-common](https://packages.debian.org/stable/dbconfig-common) also in the maintainer scripts.
+
+Both debconf and dbconfig-common are shell scripts that are to be sourced by the maintainer scripts to automate configuration during installation (and removal).
