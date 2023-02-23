@@ -1,2 +1,0 @@
-# pkdb
-Personal Knowldege Database
