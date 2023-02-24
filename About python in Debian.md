@@ -13,12 +13,12 @@ To check which directories are searched when resolving the location of a python 
 
 In Debian this results in
 
-    (empty)                                  (directory where the script is located)
-    /usr/lib/python3X.zip                    (???)
-    /usr/lib/python3.X                       (core and standard library, managed by apt)
-    /usr/lib/python3.X/lib-dynload           (core and standard library, managed by apt)
-    /usr/local/lib/python3.X/dist-packages   (managed by pip)
-    /usr/lib/python3/dist-packages           (additional packages, managed by apt)
+	(empty)                           (directory where the script is located)
+	/usr/lib/python3X.zip             (???)
+	/usr/lib/python3.X                (core and standard library, managed by apt)
+	/usr/lib/python3.X/lib-dynload    (core and standard library, managed by apt)
+	/usr/local/lib/python3.X/dist-packages   (managed by pip)
+	/usr/lib/python3/dist-packages    (additional packages, managed by apt)
 
 To check where a library was actually found do either this
 
