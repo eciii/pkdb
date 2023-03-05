@@ -1,5 +1,3 @@
-# The Rust Programming Language
-
 ### 1. Getting Started
 (short summary of the chapter)
 

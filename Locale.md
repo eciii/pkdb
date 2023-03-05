@@ -1,3 +1,5 @@
+### General theory
+
 A **Locale category** is a collection of closely-related settings that control the way information is presented to the user depending on regional and/or cultural characteristics. Examples of locale categories are:
 
 - `LANG`: Language
@@ -16,7 +18,7 @@ A locale-aware system provides:
 - A way for the user to specify the desired locale to be used for each of the supported locale categories. In Linux this is done with environment variables. 
 - A way for programs to process and present information according to those user-specified locales. In Linux this is done by... (how is this really done in Linux? there seems to be some locale-related functions provided by glibc like `nl_langinfo`... is this the whole story?).
 
-### Locales in Debian
+### Linux implementation
 
 In Debian the following utilities are used to control locale-related configuration:
 

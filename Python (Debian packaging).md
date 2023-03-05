@@ -1,10 +1,10 @@
-**About Python 2**
+### About Python 2
 
 `python2` is no longer available in Debian (bullseye). If it is installed in a Debian (bullseye) system it most certainly came from a previous Debian release.
 
 The `python-is-python2` and `python-is-python3` packages define the target of the "bare" `python` command (neither `python2` nor `python3` define it).
 
-**About the location of libraries**
+### About the location of libraries
 
 To check which directories are searched when resolving the location of a python library use:
 
@@ -31,7 +31,7 @@ or this
     import mylib
     print(inspect.getfile(mylib))
 
-**About `apt` and `pip` compatibility**
+### About `apt` and `pip` compatibility
 
 `pip` is Python's package manager. It is available in Debian through the `python3-pip` package. Since both `pip` and `apt` manage python packages `pip` tries not to get in the way of `apt` by installing all its packages under `/usr/local/lib/python3.X` and leaving `/usr/lib/python3.X` and `/usr/lib/python3` untouched (these are the locations used by `apt`, the former for the python core and standard library while the latter for any additional packages.).
 

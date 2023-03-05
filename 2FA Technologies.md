@@ -8,7 +8,7 @@
 
 ### PIV Smart card
 
-PIV stands for Personal Identity Verification. It is an acronym used by the United States federal government in the FIPS 201 standard that specifies PIV requirements for Federal employees and contractors.
+PIV stands for Personal Identity Verification. It is an acronym used by the United States federal government in the FIPS 201 standard that specifies PIV requirements for federal employees and contractors.
 
 Smart cards are typically plastic credit-card-sized cards with an embedded integrated circuit chip that stores one or more PKI certificates that identify the user. Smart cards are typically used for PIV.
 
