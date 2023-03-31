@@ -1,0 +1,10 @@
+- The **Simple Network Management Protocol** (**SNMP**) is a protocol used for the collection, monitoring and management of status and configuration settings of nodes in IP networks.
+- Some online resources about SNMP:
+  - [Wikipedia](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol)
+  - [Debian Wiki](https://wiki.debian.org/SNMP)
+- An oversimplified overview of SNMP:
+  - **Managed devices** (switches, routers, servers, etc) run programs called **SNMP agents**.
+  - A centralized **manager station** runs an **SNMP manager**.
+  - The SNMP manager is used to make **SNMP requests** to the SNMP agents to either gather information of or to make changes to the corresponding managed device. SNMP agents can also autonomously send messages to the SNMP manager. In the latter case the messages are called **SNMP traps** and are usually sent by the SNMP agent to warn or alert about something.
+- There are many commercial SNMP managers, most of which integrate SNMP features with other network functionality and provide colorful dashboards as strong selling points. To get a list of such commercial products it is enough to search the internet for "best SNMP monitoring tools".
+- It seems that the most complete and mature FOSS implementation of SNMP is [Net-SNMP](http://www.net-snmp.org/). This project is hosted at SourceForge [here](https://sourceforge.net/projects/net-snmp/). It provides implementations for an agent daemon (`snmpd`), trap-listener daemon (`snmptrapd`) and several CLI-utilities to interact with agents and managers. Notably it doesn't provide an "integrated manager solution" like common commercial SNMP software. 
