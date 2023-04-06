@@ -1,3 +1,7 @@
+**Performance of regexps in Go**
+
+See issues [26623](https://github.com/golang/go/issues/26623) and [11646](https://github.com/golang/go/issues/11646).
+
 **Network Time Protocol (NTP)**
 
 - General theory
