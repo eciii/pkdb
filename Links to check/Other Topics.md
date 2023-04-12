@@ -9,6 +9,7 @@ See issues [26623](https://github.com/golang/go/issues/26623) and [11646](https:
 - More info:
   - [https://kb.vmware.com/s/article/1006427](https://kb.vmware.com/s/article/1006427)
   - https://anarc.at/blog/2022-01-23-chrony/
+  - [Paul's Blog](https://www.libertysys.com.au/) and [this answer](https://serverfault.com/questions/1128302/does-installing-ntp-mean-im-installing-an-ntp-server) from him
 
 **`/etc/shadow`**
 
