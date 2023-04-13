@@ -2,6 +2,8 @@
 
 See issues [26623](https://github.com/golang/go/issues/26623) and [11646](https://github.com/golang/go/issues/11646).
 
+---
+
 **Network Time Protocol (NTP)**
 
 - General theory
@@ -10,6 +12,8 @@ See issues [26623](https://github.com/golang/go/issues/26623) and [11646](https:
   - [https://kb.vmware.com/s/article/1006427](https://kb.vmware.com/s/article/1006427)
   - https://anarc.at/blog/2022-01-23-chrony/
   - [Paul's Blog](https://www.libertysys.com.au/) and [this answer](https://serverfault.com/questions/1128302/does-installing-ntp-mean-im-installing-an-ntp-server) from him
+
+---
 
 **`/etc/shadow`**
 
@@ -21,6 +25,8 @@ See https://www.baeldung.com/linux/shadow-passwords
 - Libraries that interface with it: pam, crypt(3)
 - Tools to encrypt/decrypt: openssl passwd, perl crypt, python crypt
 
+---
+
 **Terminals, consoles and ttys**
 
 - History of computer terminals.
@@ -28,6 +34,8 @@ See https://www.baeldung.com/linux/shadow-passwords
 - Nowadays physical terminals are rarely used. We have instead virtual terminals and pseudo-terminals. More information about these can be found in:
 	- Some chapters of The Linux Programming Interface
 	- The systemd documentation
+
+---
 
 **About Debian and binary blobs**
 
