@@ -27,6 +27,12 @@ See https://www.baeldung.com/linux/shadow-passwords
 
 ---
 
+**Crypto and TLS**
+
+- [TLS best practices by Mozilla](https://wiki.mozilla.org/Security/Server_Side_TLS)
+
+---
+
 **Terminals, consoles and ttys**
 
 - History of computer terminals.
