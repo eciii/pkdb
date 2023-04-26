@@ -6,12 +6,7 @@ The `python-is-python2` and `python-is-python3` packages define the target of th
 
 ### About the location of libraries
 
-To check which directories are searched when resolving the location of a python library use:
-
-    import sys
-    for p in sys.path: print(p)
-
-In Debian this results in
+When resolving the location of a library in Debian 11 python searches the following directories in the stated order:
 
 	(empty)                           (directory where the script is located)
 	/usr/lib/python3X.zip             (???)
@@ -19,17 +14,6 @@ In Debian this results in
 	/usr/lib/python3.X/lib-dynload    (core and standard library, managed by apt)
 	/usr/local/lib/python3.X/dist-packages   (managed by pip)
 	/usr/lib/python3/dist-packages    (additional packages, managed by apt)
-
-To check where a library was actually found do either this
-
-    import mylib
-    print(mylib.__file__)
-
-or this
-
-    import inspect
-    import mylib
-    print(inspect.getfile(mylib))
 
 ### About `apt` and `pip` compatibility
 
