@@ -1,0 +1,7 @@
+- In essence a filesystem is a hierarchical structure of nodes, each of which is either a file or a directory. There are two kinds of permissions associated with a node (or more precisely, with the content of a node): view and modify. Every node has an owner, which is either a user or a group.
+- The owner of a file has full privileges over it.
+- Every subgroup of a group of users must belong to a group partition.
+- A group is simple if it has no subgroups.
+- A group is managed if it has a non-empty subgroup designated as the admin subgroup. Only members of the admin subgroup are allowed to create additional subgroups and or partitions of the managed group, and are also able to convert a simple subgroup into a managed one.
+- A group must be either simple or managed.
+- A directory can be either simply owned or managed. In a simply owned directory every node inside it is (simply) owned by the owner of the directory. A managed directory can only be owned by a managed group. Owners of nodes inside a managed directory must be either members or subgroups of the owner group, and, in addition to the full privileges over the content of the node, they are also able to delete the node itself. Member of the owner group are also able to create new nodes owned by either the member themself or by a subgroup of the owner group to which the member belongs.
