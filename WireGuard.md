@@ -1,3 +1,5 @@
+#OSS_Project_Overview
+
 [WireGuard](https://www.wireguard.com/) is essentially a **secure network tunnel specification** designed by [[Jason A. Donenfeld]]. The design is described in the [WireGuard official whitepaper](https://www.wireguard.com/papers/wireguard.pdf). He also develops and releases a number of **implementations**, each of which supports one or more **platforms** (currently supported platforms are Linux/Android, Windows, macOS/iOS, FreeBSD and OpenBSD)
 
 Implementations (among other related software) can be found in Donenfeld's official cgit website and/or in [WireGuard's official GitHub website](https://github.com/WireGuard).
@@ -17,7 +19,7 @@ There are currently two official userspace implementations:
 
 There are currently four official in-kernel implementations (notably there is no in-kernel implementation for macOS/iOS):
 
-- **wireguard-linux** ([cgit](https://git.zx2c4.com/wireguard-linux)): Dynamic kernel module (written in C). The **wireguard-linux-compat** ([cgit](https://git.zx2c4.com/wireguard-linux-compat)) project provides backports to older Linux kernels. This implementation also works on Android but the building and integration of it in Android seems to be more involved because there are two additional projects just to do that (both projects are essentially collections of shell scripts and makefiles):
+- **wireguard-linux** ([cgit](https://git.zx2c4.com/wireguard-linux)): Dynamic [[Linux kernel]] module (written in C). The **wireguard-linux-compat** ([cgit](https://git.zx2c4.com/wireguard-linux-compat)) project provides backports to older Linux kernels. This implementation also works on Android but the building and integration of it in Android seems to be more involved because there are two additional projects just to do that (both projects are essentially collections of shell scripts and makefiles):
   - **android_kernel_wireguard** ([cgit](https://git.zx2c4.com/android_kernel_wireguard)): Provides scripts for integrating WireGuard into Android
   - **android-wireguard-module-builder** ([cgit](https://git.zx2c4.com/android-wireguard-module-builder)): Provides scripts for building wireguard kernel modules for Android.
 - **wireguard-nt** ([cgit](https://git.zx2c4.com/wireguard-nt/)): Windows kernel DLL written in C.

@@ -1,3 +1,7 @@
+#OSS_Project_Overview
+
+Linux distribution (i.e OS based on the [[Linux kernel]]).
+
 **General resources**
 
 - [Debian Wiki (DW)](https://wiki.debian.org/)

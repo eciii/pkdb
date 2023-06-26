@@ -1,4 +1,4 @@
-#OSS_Project_Overview 
+#OSS_Project_Overview
 
 **GLib**: a C library composed of three layers:
 

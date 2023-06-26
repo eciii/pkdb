@@ -1,0 +1,3 @@
+#OSS_Project_Overview
+
+The source code of the Linux kernel and other related projects is located in a [[cgit]] website at [https://git.kernel.org/pub/scm/](https://git.kernel.org/pub/scm/). The "/pub/scm/" part in the URL serves as the root of the folder structure controlled by cgit and is optional for the homepage. The actual official source code of the Linux kernel is located under `/kernel/git/torvalds/linux.git`.
