@@ -103,5 +103,4 @@ Links to check:
 - [htop explained | peteris.rocks](https://peteris.rocks/blog/htop/)
 - [Google SRE Books](https://sre.google/books/)
 - [Product Documentation for Red Hat Enterprise Linux 9 | Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9)
-- [Virt Tools](https://www.virt-tools.org/) (see also the latest Red Hat manual on virtualization)
 - [Linux from scratch](https://www.linuxfromscratch.org/)
