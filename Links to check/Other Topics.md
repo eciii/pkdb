@@ -100,6 +100,7 @@ Links to check:
 
 **Misc**
 
+- [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
 - [htop explained | peteris.rocks](https://peteris.rocks/blog/htop/)
 - [Google SRE Books](https://sre.google/books/)
 - [Product Documentation for Red Hat Enterprise Linux 9 | Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9)
