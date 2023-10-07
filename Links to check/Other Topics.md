@@ -98,6 +98,14 @@ Links to check:
 
 ---
 
+**Go internals**
+
+- [https://readablecode.hashnode.dev/gos-channels-and-pointers](https://readablecode.hashnode.dev/gos-channels-and-pointers)
+- [https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go)
+- [https://medium.com/eureka-engineering/understanding-allocations-in-go-stack-heap-memory-9a2631b5035d](https://medium.com/eureka-engineering/understanding-allocations-in-go-stack-heap-memory-9a2631b5035d)
+
+---
+
 **Misc**
 
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
