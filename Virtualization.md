@@ -14,3 +14,8 @@ _TODO: see also the latest Red Hat manual on virtualization_
 ### Virtual Machine perspective
 
 ...
+
+---
+
+### cloud-init
+
