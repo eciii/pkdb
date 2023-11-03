@@ -6,4 +6,6 @@ Quick overview facts:
 
 - The project is mainly developed and maintained by the [[GNOME]] project.
 - The [source code](https://gitlab.gnome.org/GNOME/gtk/) is hosted on GNOME's GitLab servers.
-- The [official website](https://www.gtk.org/) includes dedicated subdomains for [documentation](https://www.gtk.org/docs/) and a [blog](https://blog.gtk.org/).
+- The official website is located at [https://www.gtk.org/]().
+- Although the documentation is located under `/docs/` in the official website it seems that there was a previous but still relevant documentation website that had its own dedicated subdomain [https://docs.gtk.org]().
+- The blog has its own dedicated subdomain [https://blog.gtk.org/]().
