@@ -10,13 +10,21 @@ But using a container runtime to run and manage several containers is cumbersome
 
 (_To expand_)
 
+Links to articles that try to sort out the mess of the container software ecosystem:
+
+- Interesting LWN articles:
+	- [Docker and the OCI container ecosystem](https://lwn.net/Articles/902049/)
+	- [The container orchestrator landscape](https://lwn.net/Articles/905164/)
+	- [LXC and LXD: a different container story](https://lwn.net/Articles/907613/)
+- [Confusing Terms In Container Ecosystem](https://nikhilsoni.me/2019/04/05/confusing-terms-in-container-ecosystem/)
+- [The differences between Docker, containerd, CRI-O and runc](https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/)
+- [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction)
+
 ### Implementations
 
 Container-related software can be broadly categorized into:
 
 **Container orchestrators**
-
-Interesting LWN articles [here](https://lwn.net/Articles/902049/ "‌"), [here](https://lwn.net/Articles/905164/ "‌") and [here](https://lwn.net/Articles/907613/ "‌")
 
 * **podman**
 * **Docker CLI + moby** (a.k.a dockerd, a.k.a **Docker Engine**)
@@ -45,3 +53,9 @@ Interesting LWN articles [here](https://lwn.net/Articles/902049/ "‌"), [here](
 
 - **buildah**
 - **Project Moby**
+
+### Major projects
+
+
+- [Moby project](https://mobyproject.org/) (upstream of some Docker projects)
+
