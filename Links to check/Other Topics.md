@@ -106,6 +106,48 @@ Links to check:
 
 ---
 
+**About hostname and FQDN configuration**
+
+Motivation:
+
+Trying to figure out the reason of the Rsyslog bug I needed to undestand what does the `gethostname` and `getaddrinfo` functions did and what the returned information mean.
+
+Links:
+
+- https://unix.stackexchange.com/questions/186859/understand-hostname-and-etc-hosts
+- https://superuser.com/questions/394816/what-is-the-difference-and-relation-between-host-name-and-canonical-name
+
+Questions:
+
+- Difference between `/etc/hostname` and `/etc/hosts`
+- Difference between the `hostname` and `hostnamectl` programs
+- Try to formulate a "formal" (maybe mathematical) description of when an IP reverse-resolve consistently and how the canonical name enters into the picture
+
+---
+
+**About the PEM format**
+
+Motivation:
+
+I implemented the parsing of the PEM formatted certificates in `jobpipe-certbot`. This made me want to learn more about the PEM format.
+
+Links:
+
+- https://stackoverflow.com/questions/5355046/where-is-the-pem-file-format-specified
+- https://medium.com/@yashschandra/anatomy-of-a-pem-file-727f1690df18
+
+---
+
+**About Git and GitHub**
+
+There are still many Git concepts that I don't fully grasp. For example, what is the difference between a remote branch and a local branch? what is `HEAD`? what is the difference between `HEAD~1` and `HEAD^1`? what is a `refspec` and many other terminology that appears in the help pages?... and the list goes on...
+
+There are also many concepts that emerge from Git, like the [workflows](https://www.atlassian.com/git/tutorials/comparing-workflows), that I also don't fully grasp (this emergence phenomenon is kind of like how the concept of containers emerge from the Linux kernel, but the Linux kernel itself doesn't know anything about containers).
+
+Also I am very unfamiliar with many GitHub workflows like Pull Requests. It would be interesting to create two temporary GitHub accounts and try to replicate a full Pull Request.
+
+---
+
 **Misc**
 
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
