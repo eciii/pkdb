@@ -92,8 +92,8 @@ func myFunc {
 #
 # Within a box, the let keyword is used to declare members. The let keyword can
 # be followed by the pub keyword to declare that member as public. Note that
-# public means read-only public; to make a data member writtable just define a
-# function that sets it.
+# public means read (and execute in the case of functions) only; to make a data
+# member writtable just define a function that sets it.
 #
 # Regarding parameters in a function signature:
 #
@@ -209,3 +209,120 @@ conn := newSSHconn("myhost", "foo=bar")
 err := conn.execCmd("ls -lhA")
 conn.close()
 ```
+
+---
+
+**Namespaces with access controls**
+
+Members of a namespace are by default private. To control access to a member of a namespace the following keywords can be used:
+
+- If the member is a data member the `pub` keyword will make it read-write. To make it just read-only use `pub ro` (this should happen only in very special situations).
+- If the member is a function member the `pub` keyword will make it execute-only. To make it execute-write use `pub xw` (this should happen only in very special situations).
+- If the member is a namespace member the `pub` keyword will make it public (namespace members cannot be changed).
+
+```
+#
+# Reasons:
+#
+# (*) because the name is at the same level or at an ancestor level (regardless
+#     of whether it's public or not)
+# (~) because all the components after the first one in the name path are public
+#
+# From here I can access:
+#
+# var1                   # (*)
+# ns1.member2            # (~)
+# ns1.nsInnerPub.member3 # (~)
+#
+# From here I cannot access (i.e none of the reasons hold):
+#
+# ns1.member1
+# ns1.nsInner.member3
+#
+
+var1 = value1
+
+ns1 = namespace {
+	#
+	# From here I can access:
+	#
+	# var1               # (*)
+	# member1            # (*)
+	# member2            # (*)
+	# nsInner.member3    # (~)
+	# nsInnerPub.member3 # (~)
+	#
+	# Notes about name collissions:
+	#
+	# * A member cannot have the same name of another member at an ancestor
+	#   level (for example a member here cannot have the name var1)
+	# * Members of sibling namespaces can have the same name (for example
+	#   nsInner.member3 and nsInnerPub.member3)
+	#
+	
+	member1 = value1
+	pub member2 = value2
+	
+	nsInner = namespace {
+		#
+		# From here I can access:
+		#
+		# var1, member1, member2 and member3 because of (*)
+		# nsInnerPub.member3 because of (*) and (~)
+		#
+		# Note that I can also access member1 as ns1.member1 but there is no
+		# need to do that and is confusing (such namings should be automatically
+		# fixed by a formatter)
+		#
+		
+		pub member3 = value3
+	}
+	
+	pub nsInnerPub = namespace {
+		pub member3 = value3
+	}
+}
+```
+
+Attempt to emulate namespaces with access controls in a language without them:
+
+```
+var1 = value1
+
+#: namespace "ns1" {
+
+ns1member1 = value1
+ns2member2 = value2 #: pub
+
+#: namespace "nsInner" {
+ns1nsInnerMember3 = value3
+#: }
+
+#: pub namespace "nsInner" {
+ns1nsInnerPubMember3 = value3 #: pub
+#: }
+
+#: }
+```
+
+but keep in mind the following considerations:
+
+- The whole namespace hierarchy is effectively "flattened" and everything becomes effectively public.
+- The names of the namespaces are not needed anymore. They are given above just for a reference but they can just as well be omitted.
+- The names of the variables/members now have to reflect the namespaces where they belong. This serves two purposes: avoid collisions and give semantic context. _From anecdotal experience I've come up to the conclusion that there should not be any rigid naming conventions in this respect_. Instead it is the responsibility of the developer to use common sense to find unique, meaningful and clear names for all the variables/members in the "flattened" namespace. For example in Go:
+
+```
+//: namespace "ssh" {
+
+var sshHost string // private and set in initSSH
+var sshControlPath // private and set in initSSH
+
+func initSSH(host string) {} //: pub
+func execSSHcmd(cmd string) {} //: pub
+func closeSSH() {} //: pub
+
+//: }
+```
+
+- Since everything becomes effectively public a convention for access control is established: everything is private unless documented public with a comment. It is the responsibility of the developer to honor this access control convention.
+
