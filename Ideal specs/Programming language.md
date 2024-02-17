@@ -326,3 +326,13 @@ func closeSSH() {} //: pub
 
 - Since everything becomes effectively public a convention for access control is established: everything is private unless documented public with a comment. It is the responsibility of the developer to honor this access control convention.
 
+---
+
+Missing considerations:
+
+- **Section** is the name of a static box.
+- Anonymous sections: Names of public members are merged into the name map defined by the containing namespace. Thus a public member of an anonymous section cannot have the same name of another member of the containing namespace. This rule does not apply to private members of the anonymous section.
+- Emulation of classes in Go. Some ideas:
+	- The members of a class must be defined in a struct and the methods are all methods of that struct.
+	- The struct behaves like a public anonymous section, that is, whatever is private in the struct remains private and whatever is public in the struct is also public outside of the class.
+- Emulation of "structured enums" (like the enums in Rust) in Go using "union structs" with "union keys".
