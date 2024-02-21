@@ -8,9 +8,9 @@ _Topics to check_
 ------
 
 - Meaning of **to monitor**: to regularly check with the purpose of warning and/or alerting
-- Meaning of **to check**: to look at something (or otherwise use your senses) to obtain information about a specific fact (e.g *to check the time* or *to check you pockets to make sure you didn't forget your keys*).
-- Meaning of **to warn**: to give notice to *beforehand* of danger.
-- Meaning of **to alert**: to signal *danger*.
+- Meaning of **to check**: to look at something (or otherwise use your senses) to obtain information about a specific fact (e.g _to check the time_ or _to check your pockets_).
+- Meaning of **to warn**: to give notice of _possible_ danger.
+- Meaning of **to alert**: to signal _imminent_ danger.
 
 ------
 
