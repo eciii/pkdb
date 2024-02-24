@@ -1,19 +1,35 @@
-A **block of memory** is a connected region of memory specified by a _base address_ and a _length_. 
+**Blocks of memory and types**
 
-_Note: Blocks of memory are used to store data. Data can be classified using types. A **type of length L** represents the way the data stored in a specific block of memory of length L is to be interpreted. The type of a specific block of memory determines which kinds of operations can be performed on and with the data stored in it._
+A **block of memory** is a region of memory specified by a _base address_ and a _length_. Blocks of memory are used to store data. Before using the data stored inside a block of memory the compiler first needs to determine which kinds of operations can be performed on and with that data. To do that the compiler classifies all the data it can handle using **types**. A type represents the way the data stored in a specific block of memory is to be interpreted. The data stored in a block of memory and interpreted according to a type is called a **value**.
 
-A **name** is just an identifier. 
+**The tblock model**
 
-A **name map** is a function that maps a collection of names to blocks of memory.
+A useful mental model to understand how such associations between blocks of memory and types can be implemented is the **tblock** structure (tblock is a shorthand for "typed block"). A tblock structure represent a raw block of memory and the corresponding type used to interpret that block of memory. A very simple implementation of tblocks can be (in pseudo-C/Go):
 
-A **name stack** is a stack of name maps.
+```
+structure tblock_t {
+	base_address <pointer> # pointer to base address of raw block of memory
+	type         <type_t>  # type to interpret the raw block of memory
+}
 
-The **name resolution** algorithm of a name with respect to a name stack is the following:
+structure type_t {
+	id     <something enumish> # some way to identify the type
+	length <unsigned_integer>  # length of the raw block of memory
+}
+```
 
-- we start at the top of the stack, i.e at the last added name map in the stack, and check if the name is defined in that map
-- if yes then we return the associated block of memory; in such a case we say that _the name resolves to the block of memory with respect to the name stack_
+Note that some types might have a fixed length (e.g numeric types) while others might have variable length (e.g strings or lists).
+
+**Names**
+
+A **name** is just an identifier. A **name map** is a function that maps a collection of names to tblock structures. A **name stack** is a stack of name maps.
+
+The **name resolution** algorithm of a name `N` with respect to a name stack `S` is the following:
+
+- we start at the top of the stack, i.e at the last added name map in the stack, and check if the name `N` is defined in that map
+- if yes then we return the associated tblock `B`; in such a case we say that _the name `N` resolves to the tblock `B` with respect to the name stack `S`_
 - if not then we continue with the next name map in the stack and try to find the name there
-- if the stack is exhausted and no block of memory is found for that name we say that _the name is undefined with respect to the name stack_
+- if the stack is exhausted and no block of memory is found for that name we say that _the name `N` is undefined with respect to the name stack `S`_
 
 ---
 
