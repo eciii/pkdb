@@ -1,10 +1,10 @@
 **APT Facts**
 
-**Fact**: Configuration settings are stored `.conf` files in `/etc/apt/apt.conf.d`. These files originate in various ways and from various sources (see section "Summary of files in `/etc/apt/apt.conf.d`" below).
+**Fact**: Configuration settings are stored in `.conf` files in `/etc/apt/apt.conf.d`. These files originate in various ways and from various sources (see section "Summary of files in `/etc/apt/apt.conf.d`" below).
 
 **Fact**: The `APT::LastInstalledKernel` mechanism.
 
-The `APT::LastInstalledKernel` setting is used by APT to avoid the autoremoval of the last installed kernel. In order to keep this setting up-to-date APT ships with the shell script `/etc/kernel/postinst.d/apt-auto-removal`. This script is executed as part of the the postinst hook every time a new kernel package is installed. The script simply creates/updates the configuration file `/etc/apt/apt.conf.d/01autoremove-kernels` which contains the `APT::LastInstalledKernel` setting set to the version of kernel being installed.
+The `APT::LastInstalledKernel` setting is used by APT to avoid the autoremoval of the last installed kernel. In order to keep this setting up-to-date APT ships with the shell script `/etc/kernel/postinst.d/apt-auto-removal`. This script is executed as part of the install/remove hook mechanism of the [[Debian kernel packages]]. Every time a kernel package is installed the script creates/updates the configuration file `/etc/apt/apt.conf.d/01autoremove-kernels` which contains the `APT::LastInstalledKernel` setting set to the version of kernel being installed.
 
 **Fact**: Daily systemd timers.
 
@@ -17,11 +17,7 @@ APT ships with files that set two systemd timers (here `P=/lib/systemd/system`):
 	Files: `$P/apt-daily-upgrade.timer` and `$P/apt-daily-upgrade.service`
 	This timer is in charge of installing the previously downloaded updates
 
-Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT).
-
-This script is executed by the `apt-daily` timer with the argument `update` and by the `apt-daily-upgrade` timer with the argument `install`.
-
-Some of the tasks performed by the script use the the main `unattended-upgrade` script (hard-coded, the script expects that there is an executable with the name `unattended-upgrade`).
+Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT). This script is executed by the `apt-daily` timer with the argument `update` and by the `apt-daily-upgrade` timer with the argument `install`. Some of the tasks performed by the script use the the main `unattended-upgrade` script (hard-coded, the script expects that there is an executable with the name `unattended-upgrade`).
 
 ---
 

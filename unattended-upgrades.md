@@ -1,31 +1,29 @@
 **unattended-upgrades Facts**
 
-**Fact**: Overview of installed files (see section "Summary of files installed by `unattended-upgrades`" below for more details):
+**Fact**: Main script and corresponding man page.
 
-- Main script (in Python 3), man page (both with the name `unattended-upgrade`, note the missing "s" at the end) and corresponding symlinks with name `unattended-upgrades`.
-- Configuration files in `/etc/apt/apt.conf.d`. These files are installed by the postinst hook of `unattended-upgrades` using `debconf`. The files are:
-	- The file `20auto-upgrades` control the execution of the main `unattended-upgrade` script in `/usr/lib/apt/apt.systemd.daily` via some settings in `APT::Periodic`.
-	- The file `50unattended-upgrades` holds settings consumed only by the main `unattended-upgrades` script.
-
----
-
-**Summary of files installed by `unattended-upgrades`**
-
-Main script and corresponding man documentation
+The main script of the package (a Python script) and the corresponding man page are (note the missing "s" at the end of the name):
 
 ```
 /usr/bin/unattended-upgrade
 /usr/share/man/man8/unattended-upgrade.8.gz
 ```
 
-Symlinks to their corresponding unattended-upgrade version
+There are also symlinks to the main script and man page with the name `unattended-upgrades` (note the trailing "s"):
 
 ```
 /usr/bin/unattended-upgrades
 /usr/share/man/man8/unattended-upgrades.8.gz
 ```
 
-Configuration files installed on `/etc/apt/apt.conf.d` by the postinst maintainer script
+**Fact**: Configuration files.
+
+The package comes with two configuration files that are installed on `/etc/apt/apt.conf.d` by the postinst hook using `debconf`. The files are:
+
+- The file `20auto-upgrades`, which control the execution of the main `unattended-upgrade` script in `/usr/lib/apt/apt.systemd.daily` via some settings in `APT::Periodic`.
+- The file `50unattended-upgrades`, which holds settings consumed only by the main `unattended-upgrade` script.
+
+The corresponding files shipped by the package are:
 
 ```
 /usr/share/unattended-upgrades/20auto-upgrades
@@ -33,6 +31,25 @@ Configuration files installed on `/etc/apt/apt.conf.d` by the postinst maintaine
 /usr/share/unattended-upgrades/50unattended-upgrades
 /usr/share/unattended-upgrades/50unattended-upgrades.md5sum
 ```
+
+**Fact**: The `reboot-required` mechanism.
+
+The package comes with the shell script `/etc/kernel/postinst.d/unattended-upgrades` that is executed as part of the the install/remove hook mechanism of the [[Debian kernel packages]]. Every time a kernel package is installed the script creates the (empty) file `/var/run/reboot-required` and appends the name of the corresponding `linux-image-*` package to the file `/var/run/reboot-required.pkgs`.
+
+```
+/etc/kernel/postinst.d/unattended-upgrades
+```
+
+The motd hook `92-unattended-upgrades` just calls the `update-motd-unattended-upgrades` script. This script checks for the existence of the file `/var/lib/unattended-upgrades/kept-back`, which contains a space-separated list of kept-backed packages from the last upgrade. If the file is present, the script prints a message telling how many packages were kept-back.
+
+```
+/etc/update-motd.d/92-unattended-upgrades
+/usr/share/unattended-upgrades/update-motd-unattended-upgrades
+```
+
+---
+
+**Summary of files installed by `unattended-upgrades`**
 
 The systemd service `unattended-upgrades.service` starts the `unattended-upgrade-shutdown` script with the `--wait-for-signal` option.
 
@@ -54,21 +71,6 @@ _TODO:_ The logic of the script `unattended-upgrades-shutdown` is a bit complex 
 /etc/pm/sleep.d/10_unattended-upgrades-hibernate
 /usr/lib/systemd/logind.conf.d/unattended-upgrades-logind-maxdelay.conf
 /usr/share/unattended-upgrades/unattended-upgrade-shutdown
-```
-
-Kernel packages (of the form `linux-image-{version}-{platform}`) ship with "(pre|post)(inst|rm)" hook scripts that are executed by `dpkg` during install and removal/purge. These hook scripts in turn execute an additional layer of hook scripts located at `/etc/kernel/(pre|post)(inst|rm).d` respectively.
-
-The `unattended-upgrades` package uses a postinst hook script to create the (empty) file `/var/run/reboot-required` and append the name of the corresponding `linux-image-*` package to the file `/var/run/reboot-required.pkgs`.
-
-```
-/etc/kernel/postinst.d/unattended-upgrades
-```
-
-The motd hook `92-unattended-upgrades` just calls the `update-motd-unattended-upgrades` script. This script checks for the existence of the file `/var/lib/unattended-upgrades/kept-back`, which contains a space-separated list of kept-backed packages from the last upgrade. If the file is present, the script prints a message telling how many packages were kept-back.
-
-```
-/etc/update-motd.d/92-unattended-upgrades
-/usr/share/unattended-upgrades/update-motd-unattended-upgrades
 ```
 
 Log rotation policy
