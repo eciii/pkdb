@@ -4,7 +4,7 @@
 
 **Fact**: The `APT::LastInstalledKernel` mechanism.
 
-The `APT::LastInstalledKernel` setting is used by APT to avoid the autoremoval of the last installed kernel. In order to keep this setting up-to-date APT ships with the shell script `/etc/kernel/postinst.d/apt-auto-removal`. This script is executed as part of the install/remove hook mechanism of the [[Debian kernel packages]]. Every time a kernel package is installed the script creates/updates the configuration file `/etc/apt/apt.conf.d/01autoremove-kernels` which contains the `APT::LastInstalledKernel` setting set to the version of kernel being installed.
+The `APT::LastInstalledKernel` setting is used by APT to avoid the autoremoval of the last installed kernel. In order to keep this setting up-to-date APT ships with the shell script `/etc/kernel/postinst.d/apt-auto-removal`. This script is executed as part of the _install/remove hook mechanism_ of the _Debian kernel packages_. Every time a kernel package is installed the script creates/updates the configuration file `/etc/apt/apt.conf.d/01autoremove-kernels` which contains the `APT::LastInstalledKernel` setting set to the version of kernel being installed.
 
 **Fact**: Daily systemd timers.
 

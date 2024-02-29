@@ -27,20 +27,6 @@ See https://www.baeldung.com/linux/shadow-passwords
 
 ---
 
-**Virtualized networking**
-
-- [kvm - virt-manager: is it possible to assign specific IP addresses to certains VMs via the virtual DHCP? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/174884/virt-manager-is-it-possible-to-assign-specific-ip-addresses-to-certains-vms-via)
-- [libvirt: Network XML format](https://libvirt.org/formatnetwork.html#elementsAddress)
-- [Networking - Libvirt Wiki](https://wiki.libvirt.org/page/Networking)
-- [libvirt Networking Handbook — Jamie Nguyen](https://jamielinux.com/docs/libvirt-networking-handbook/)
-- [BridgeNetworkConnections - Debian Wiki](https://wiki.debian.org/BridgeNetworkConnections)
-- [iproute2 - Wikipedia](https://en.wikipedia.org/wiki/Iproute2)
-- [iproute2/iproute2.git - Iproute2 routing commands and utilities](https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/)
-- [Canonical Netplan](https://netplan.io/)
-- [rtnetlink(7) - Linux manual page](https://www.man7.org/linux/man-pages/man7/rtnetlink.7.html)
-
----
-
 **Crypto and TLS**
 
 - [TLS best practices by Mozilla](https://wiki.mozilla.org/Security/Server_Side_TLS)
@@ -153,5 +139,4 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
 - [htop explained | peteris.rocks](https://peteris.rocks/blog/htop/)
 - [Google SRE Books](https://sre.google/books/)
-- [Product Documentation for Red Hat Enterprise Linux 9 | Red Hat Customer Portal](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9)
 - [Linux from scratch](https://www.linuxfromscratch.org/)

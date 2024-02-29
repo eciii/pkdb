@@ -34,7 +34,7 @@ The corresponding files shipped by the package are:
 
 **Fact**: The `reboot-required` mechanism.
 
-The package comes with the shell script `/etc/kernel/postinst.d/unattended-upgrades` that is executed as part of the the install/remove hook mechanism of the [[Debian kernel packages]]. Every time a kernel package is installed the script creates the (empty) file `/var/run/reboot-required` and appends the name of the corresponding `linux-image-*` package to the file `/var/run/reboot-required.pkgs`.
+The package comes with the shell script `/etc/kernel/postinst.d/unattended-upgrades` that is executed as part of the _install/remove hook mechanism_ of the _Debian kernel packages_. Every time a kernel package is installed the script creates the (empty) file `/var/run/reboot-required` and appends the name of the corresponding `linux-image-*` package to the file `/var/run/reboot-required.pkgs`.
 
 ```
 /etc/kernel/postinst.d/unattended-upgrades
