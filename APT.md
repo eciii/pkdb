@@ -17,7 +17,35 @@ APT ships with files that set two systemd timers (here `P=/lib/systemd/system`):
 	Files: `$P/apt-daily-upgrade.timer` and `$P/apt-daily-upgrade.service`
 	This timer is in charge of installing the previously downloaded updates
 
-Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT). This script is executed by the `apt-daily` timer with the argument `update` and by the `apt-daily-upgrade` timer with the argument `install`. Some of the tasks performed by the script use the the main `unattended-upgrade` script (hard-coded, the script expects that there is an executable with the name `unattended-upgrade`).
+Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT). This script is executed by the `apt-daily` timer with the argument `update` and by the `apt-daily-upgrade` timer with the argument `install`.
+
+---
+
+**Daily systemd timers**
+
+**Fact**: Relation with the [[unattended-upgrades]] package.
+
+The fact that the `unattended-upgrades` package is provided separately from APT might lead to think that APT has some sort of pluggable mechanism to perform automated periodic updates/upgrades. But this is in fact not true because some of the tasks performed by the script `/usr/lib/apt/apt.systemd.daily` use the main script of [[unattended-upgrades]]. This effectively means, that the `unattended-upgrades` package is the only package supported by APT for automated periodic updates/upgrades.
+
+**Fact**: The rationale about why are there two different timers and when they are supposed to run is simple: the goal is to have updates spread uniformly across all timezones, and upgrades in predictable application windows. See [this bug](https://bugs.launchpad.net/ubuntu/+source/apt/+bug/1686470) and [this commit](https://salsa.debian.org/apt-team/apt/-/commit/496313fb8e83af2ba71f6ce3d729be687c293dfd).
+
+**Fact**: The wait-online mechanism
+
+Since network connectivity is required to do updates/upgrades the `unattended-upgrades` package needs a way to ensure that this requirement is met before trying to run the actual updates/upgrades.
+
+Originally the solution seemed to be simple:
+
+```
+apt-daily.timer:
+	After=network-online.target
+	Wants=network-online.target
+
+apt-daily-upgrade.timer:
+	After=apt-daily.timer
+
+apt-daily-upgrade.service:
+	After=apt-daily.service
+```
 
 ---
 
