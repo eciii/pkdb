@@ -1,10 +1,14 @@
-**APT Facts**
-
 **Fact**: Configuration settings are stored in `.conf` files in `/etc/apt/apt.conf.d`. These files originate in various ways and from various sources (see section "Summary of files in `/etc/apt/apt.conf.d`" below).
 
 **Fact**: The `APT::LastInstalledKernel` mechanism.
 
 The `APT::LastInstalledKernel` setting is used by APT to avoid the autoremoval of the last installed kernel. In order to keep this setting up-to-date APT ships with the shell script `/etc/kernel/postinst.d/apt-auto-removal`. This script is executed as part of the _install/remove hook mechanism_ of the _Debian kernel packages_. Every time a kernel package is installed the script creates/updates the configuration file `/etc/apt/apt.conf.d/01autoremove-kernels` which contains the `APT::LastInstalledKernel` setting set to the version of kernel being installed.
+
+---
+
+**Daily tasks**
+
+**Fact**: APT used to 
 
 **Fact**: Daily systemd timers.
 
@@ -17,11 +21,9 @@ APT ships with files that set two systemd timers (here `P=/lib/systemd/system`):
 	Files: `$P/apt-daily-upgrade.timer` and `$P/apt-daily-upgrade.service`
 	This timer is in charge of installing the previously downloaded updates
 
-Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT). This script is executed by the `apt-daily` timer with the argument `update` and by the `apt-daily-upgrade` timer with the argument `install`.
+Both timers execute the shell script `/usr/lib/apt/apt.systemd.daily` (which also belongs to APT). The `apt-daily` timer executes the script with the argument `update` and the `apt-daily-upgrade` timer executes the script with the argument `install`.
 
----
-
-**Daily systemd timers**
+Previously APT used a cronjob for this
 
 **Fact**: Relation with the [[unattended-upgrades]] package.
 
