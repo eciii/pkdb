@@ -47,6 +47,13 @@ The motd hook `92-unattended-upgrades` just calls the `update-motd-unattended-up
 /usr/share/unattended-upgrades/update-motd-unattended-upgrades
 ```
 
+**Fact**: The debconf setting `enable_auto_updates`
+
+The debconf setting `enable_auto_updates` is used by the maintainer scripts to maintain the file `/etc/apt/apt.conf.d/20auto-upgrades`. This file contains the APT settings `APT::Periodic::Update-Package-Lists` and `APT::Periodic::Unattended-Upgrade` set to either 1 or 0 depending on whether `enable_auto_updates` is set to `true` or `false`.
+
+**Thoughts**
+
+- Since the interval settings used by the `apt-systemd-daily` script should not be interval settings but boolean settings (see the thoughts in the `apt-systemd-daily` script section) the maintainer scripts should set the settings in `/etc/apt/apt.conf.d/20auto-upgrades` to `always` instead of 1 when the debconf setting `enable_auto_updates` is set to `true`.
 ---
 
 **Summary of files installed by `unattended-upgrades`**
