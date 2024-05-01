@@ -5,7 +5,7 @@ Linux distribution (i.e OS based on the [[Linux kernel]]).
 **General resources**
 
 - [Debian Wiki](https://wiki.debian.org/) (DW)
-- [Debian Administrator Handbook)](https://www.debian.org/doc/manuals/debian-handbook/index.en.html) (DAH)
+- [Debian Administrator Handbook](https://www.debian.org/doc/manuals/debian-handbook/index.en.html) (DAH)
 - [Debian Policy Manual](https://www.debian.org/doc/debian-policy/) (DPM)
 - [Securing Debian Manual](https://www.debian.org/doc/manuals/securing-debian-manual/index.en.html) (SDM)
 - [Debian Reference](https://www.debian.org/doc/manuals/debian-reference/) (DR)

@@ -3,7 +3,7 @@ Two types of systems and their related disciplines:
 - Computer systems: computer science and computer engineering
 - Software systems: software science and software engineering
 
-A **computer system** is an _electronic system_ (a.k.a _hardware_) that enables _general-purpose computing_ by being able to perform several types of _instructions_. The collection of large sequences of such instructions with a specific purpose is what is known as **software**.
+A **computer system** is an _electronic system_ (a.k.a _hardware_) that enables _general-purpose computing_ by being able to perform several types of _instructions_. The collection of large sequences of such instructions, with a specific purpose, is what is known as **software**.
 
 ---
 
