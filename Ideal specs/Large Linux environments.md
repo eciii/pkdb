@@ -1,5 +1,6 @@
 **Preamble**
 
+- A _service_ is the work done by one party to satisfy a specific need of another party.
 - An IT Services (ITS) project is a project that provides one or more IT services to a given client.
 - To provide those services the project team needs to setup and continuously manage an _IT System_ that consists of software running on physical and/or virtual infrastructure.
 - An ITS project is successful if the services are provided with _High Reliability_.
