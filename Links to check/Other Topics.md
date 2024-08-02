@@ -81,6 +81,7 @@ Dovecot (IMAP/POP3 server (for mail storage))
 Links to check:
 
 - Apart from the main documentation in the [official website of SSSD](https://sssd.io/) there seems to be also a very good documentation of SSSD [here](https://docs.pagure.org/sssd.sssd/index.html).
+- [SO question](https://stackoverflow.com/questions/43987531/difference-between-active-directory-and-identity-and-access-managment) about the difference between IAM and AD
 
 ---
 
