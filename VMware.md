@@ -20,3 +20,28 @@ The open-vm-tools project seems to be hosted both at [GitHub](https://github.com
 
 - `vgauth.service` which executes the binary `/usr/bin/VGAuthService`. This service provides support for SAML based authentication for vSphere Guest Operations.
 - `open-vm-tools.service` which executes the binary `/usr/bin/vmtoolsd`. This service uses a plug-in architecture to implement several features to improve the interaction with guest OSes.
+
+### Experiments with `govc`
+
+`govc` is a tool shipped with [govmomi](https://github.com/vmware/govmomi/tree/main)
+
+* I downloaded `govc` into a directory
+* In that directory I also created a convenience script called `govc.sh` that calls the `govc` binary with the right parameters
+* The last things I was experimenting with was to get the lest version of a ESXi host in order to know the maximum compatibility that I could assign to a VM during creation:
+
+```
+# List the ESXi hosts together with their version
+$ ./govc.sh find -type h \
+> | sort \
+> | while IFS='' read l; do
+>     v="$(
+>         ./govc.sh host.info -host="$l" -json \
+>         | jq '.HostSystems[].Summary.Config.Product.Version'
+>     )"
+>     echo "$l;$v"
+>   done
+  
+# List all resources in vSphere (the HostSystem ones are the ones I was
+# interested in as they are the actual ESXi hosts)
+$ ./govc.sh find -l | sed 's/ \+/;/' | sort -k2,2 -t';' | column -ts';'
+```
