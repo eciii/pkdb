@@ -124,6 +124,13 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 ---
 
+**About cache coherence (in general and in the context of NFS)**
+
+- The concept of cache coherence is explained in the corresponding [Wikipedia article](https://en.wikipedia.org/wiki/Cache_coherence).
+- The `nfs(5)` man page has [a section](https://www.man7.org/linux/man-pages/man5/nfs.5.html#DATA_AND_METADATA_COHERENCE) on data and metadata cache coherence.
+
+---
+
 **Misc**
 
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
