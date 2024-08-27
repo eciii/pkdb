@@ -131,6 +131,13 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 ---
 
+**About the `flock`/`fnctl` conflict in NFS**
+
+- The `flock(2)` man page has [a section](https://www.man7.org/linux/man-pages/man2/flock.2.html#HISTORY) on how NFS emulates `flock` using `fnctl`.
+- See [this blog post](https://utcc.utoronto.ca/~cks/space/blog/linux/FlockFcntlAndNFS).
+
+---
+
 **Misc**
 
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.
