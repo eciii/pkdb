@@ -33,7 +33,7 @@ Technologies typically used in **Telecommunications** at the lower levels of the
 	- Also used to carry IP. This setup is called [IPFC](https://en.wikipedia.org/wiki/IPFC).
 - [Wi-Fi](https://en.wikipedia.org/wiki/Wi-Fi)
 	- Based on the WLAN IEEE 802.11 standard and designed to be fully compatible with Ethernet.
-	- Mostly used to carry TCP/IP
+	- Mostly used to carry IP
 
 **Network Layer**
 
