@@ -138,6 +138,15 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 ---
 
+**User sessions in Linux**
+
+- systemd's [JSON User Records](https://systemd.io/USER_RECORD/)
+- https://askubuntu.com/questions/294736/run-a-shell-script-as-another-user-that-has-no-password
+- https://unix.stackexchange.com/questions/50665/what-are-the-differences-between-interactive-non-interactive-login-and-non-lo
+- https://wiki.debian.org/SystemGroups
+
+---
+
 **Misc**
 
 - [Why an empty .vimrc file removes the default Vim configuration](https://vi.stackexchange.com/questions/33154/why-does-an-empty-vimrc-file-change-my-configuration-e-g-disable-syntax-highli). Thus it is advisable to _always_ prepend the line `source $VIMRUNTIME/defaults.vim` to the `.vimrc` file.

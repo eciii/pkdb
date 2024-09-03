@@ -39,3 +39,26 @@ Technologies typically used in **Telecommunications** at the lower levels of the
 
 - IP
 - SCSI. There is also iSCSI which is kind of SCSI over IP.
+
+---
+
+**About multihoming/aggregation**
+
+Multihoming:
+
+- Requirement: Network interfaces must be in different networks.
+- Two approaches:
+	- Basic (uses static routes).
+	- Advanced (uses dynamic routing (BGP))
+
+Problems may arise if two network interfaces are configured with IPs in the same subnet. See https://duckduckgo.com/?q=network+interfaces+in+the+same+subnet. In particular:
+
+- [This SE question](https://serverfault.com/questions/415304/multiple-physical-interfaces-with-ips-on-the-same-subnet) mentions [Strong vs. Weak End System Models](https://wiki.treck.com/Appendix_C:_Strong_End_System_Model_/_Weak_End_System_Model).
+- [This result](https://access.redhat.com/solutions/30564) by Red Hat and [this SE question](https://serverfault.com/questions/197752/several-ip-address-within-the-same-subnet-on-the-same-host).
+
+Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advantages: redundancy (via fail-over) and performance (via load-balancing).
+
+- In Linux: The Linux kernel offers _bonding_. RHEL 7 tried to introduce _teaming_ but it didn't gain traction. It was removed in RHEL 9.
+- IP aliasing.
+- VLANs.
+- LACP/EtherChannel.
