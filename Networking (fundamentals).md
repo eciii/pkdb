@@ -42,6 +42,10 @@ Technologies typically used in **Telecommunications** at the lower levels of the
 
 ---
 
+### Other concepts
+
+To learn more: [CCNA 200-301 Official Cert Guide Library](https://www.amazon.com/CCNA-200-301-Official-Guide-Library/dp/0138221391).
+
 **About multihoming/aggregation**
 
 Multihoming:
@@ -62,3 +66,17 @@ Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advan
 - IP aliasing.
 - VLANs.
 - LACP/EtherChannel.
+
+
+**Broader Networking topics**
+
+Data Center Networking:
+
+- Topologies: traditional multi-tiered, fat tree, leaf-spine (see [NetworkChuck video](https://www.youtube.com/watch?v=6-66D9J5PkY) on this topic).
+- VLAN configuration in the data center:
+	- IEEE standards: Multiple VLAN Registration Protocol (MVRP). It is part of the Multiple Registration Protocol (MRP) that replaced the Generic Attribute Registration Protocol (GARP).
+	- VLAN Trunking Protocol (VTP), a similar but proprietary protocol from Cisco.
+
+WAN Networking:
+
+- See [NetworkChuck video](https://www.youtube.com/watch?v=xPi4uZu4uF0) on this topic.
