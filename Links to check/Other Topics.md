@@ -1,6 +1,9 @@
-**Performance of regexps in Go**
 
-See issues [26623](https://github.com/golang/go/issues/26623) and [11646](https://github.com/golang/go/issues/11646).
+**LMDB**
+
+- Maintained by [Symas](https://www.symas.com/). Official website at https://www.symas.com/lmdb.
+- The [git repository](https://git.openldap.org/openldap/openldap/tree/mdb.master) is the `mdb.master` branch of the [OpenLDAP git repository](https://git.openldap.org/openldap/openldap) (located in a self-managed GitLab installation at https://git.openldap.org).
+- There is a Python binding at https://github.com/jnwatson/py-lmdb, with official documentation at https://lmdb.readthedocs.io. It is also maintained as a Debian package with the name [python3-lmdb](https://packages.debian.org/en/stable/python/python3-lmdb).
 
 ---
 

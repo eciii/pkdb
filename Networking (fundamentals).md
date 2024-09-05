@@ -72,11 +72,12 @@ Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advan
 
 Data Center Networking:
 
-- Topologies: traditional multi-tiered, fat tree, leaf-spine (see [NetworkChuck video](https://www.youtube.com/watch?v=6-66D9J5PkY) on this topic).
+- Topologies: traditional multi-tiered, fat tree, leaf-spine (see the [NetworkChuck video](https://www.youtube.com/watch?v=6-66D9J5PkY) on this topic).
 - VLAN configuration in the data center:
 	- IEEE standards: Multiple VLAN Registration Protocol (MVRP). It is part of the Multiple Registration Protocol (MRP) that replaced the Generic Attribute Registration Protocol (GARP).
 	- VLAN Trunking Protocol (VTP), a similar but proprietary protocol from Cisco.
+- For more on this topic the book [Essentials of Cloud Computing](https://link.springer.com/book/10.1007/978-3-031-32044-6) might be interesting.
 
 WAN Networking:
 
-- See [NetworkChuck video](https://www.youtube.com/watch?v=xPi4uZu4uF0) on this topic.
+- See the [NetworkChuck video](https://www.youtube.com/watch?v=xPi4uZu4uF0) on this topic.
