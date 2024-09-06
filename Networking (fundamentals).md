@@ -65,6 +65,7 @@ Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advan
 - In Linux: The Linux kernel offers _bonding_. RHEL 7 tried to introduce _teaming_ but it didn't gain traction. It was removed in RHEL 9.
 - IP aliasing.
 - VLANs.
+	- [Article](https://www.comparitech.com/net-admin/inter-vlan-routing-configuration/) about inter-VLAN routing.
 - LACP/EtherChannel.
 
 
@@ -81,3 +82,4 @@ Data Center Networking:
 WAN Networking:
 
 - See the [NetworkChuck video](https://www.youtube.com/watch?v=xPi4uZu4uF0) on this topic.
+- See the attachments of [this seminar](https://nsrc.org/workshops/2014/mongolia-ixp/wiki/Track1Agenda.html#no1).
