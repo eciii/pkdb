@@ -44,7 +44,13 @@ Technologies typically used in **Telecommunications** at the lower levels of the
 
 ### Other concepts
 
-To learn more: [CCNA 200-301 Official Cert Guide Library](https://www.amazon.com/CCNA-200-301-Official-Guide-Library/dp/0138221391).
+To learn more: 
+
+- [CCNA 200-301 Official Cert Guide Library](https://www.amazon.com/CCNA-200-301-Official-Guide-Library/dp/0138221391).
+- [GNS3](https://www.gns3.com/): FOSS Network simulator/emulator.
+- Youtube channels:
+	- [David Bombal Tech](https://www.youtube.com/@DavidBombalTech).
+	- [NetworkChuck](https://www.youtube.com/@NetworkChuck).
 
 **About multihoming/aggregation**
 
@@ -73,7 +79,7 @@ Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advan
 
 Data Center Networking:
 
-- Topologies: traditional multi-tiered, fat tree, leaf-spine (see the [NetworkChuck video](https://www.youtube.com/watch?v=6-66D9J5PkY) on this topic).
+- Topologies: traditional multi-tiered, fat tree, leaf-spine.
 - VLAN configuration in the data center:
 	- IEEE standards: Multiple VLAN Registration Protocol (MVRP). It is part of the Multiple Registration Protocol (MRP) that replaced the Generic Attribute Registration Protocol (GARP).
 	- VLAN Trunking Protocol (VTP), a similar but proprietary protocol from Cisco.
@@ -81,5 +87,4 @@ Data Center Networking:
 
 WAN Networking:
 
-- See the [NetworkChuck video](https://www.youtube.com/watch?v=xPi4uZu4uF0) on this topic.
 - See the attachments of [this seminar](https://nsrc.org/workshops/2014/mongolia-ixp/wiki/Track1Agenda.html#no1).
