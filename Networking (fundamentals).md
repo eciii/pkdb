@@ -75,7 +75,7 @@ Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advan
 - LACP/EtherChannel.
 
 
-**Broader Networking topics**
+**Broader networking topics**
 
 Data Center Networking:
 
@@ -88,3 +88,9 @@ Data Center Networking:
 WAN Networking:
 
 - See the attachments of [this seminar](https://nsrc.org/workshops/2014/mongolia-ixp/wiki/Track1Agenda.html#no1).
+
+
+**About networking hardware**
+
+- The [Open Network Install Environment (ONIE)](https://opencomputeproject.github.io/onie) is a Linux/BusyBox OS preinstalled as firmware in networking hardware. It allows the installation of a Networking OS (NOS) to manage the hardware.
+- The NOS offered by DELL is the OS10.
