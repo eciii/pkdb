@@ -52,19 +52,34 @@ To learn more:
 	- [David Bombal Tech](https://www.youtube.com/@DavidBombalTech).
 	- [NetworkChuck](https://www.youtube.com/@NetworkChuck).
 
-**About multihoming/aggregation**
+**Multihoming**
 
-Multihoming:
+A host might have multiple network interfaces. This gives rise to several situations.
 
-- Requirement: Network interfaces must be in different networks.
-- Two approaches:
-	- Basic (uses static routes).
-	- Advanced (uses dynamic routing (BGP))
+First it is important to understand the difference between the _strong and weak host models_ of a TCP/IP stack. Relevant links are:
+
+- [The Wikipedia article on Host models](https://en.wikipedia.org/wiki/Host_model).
+- [RFC 1122](https://datatracker.ietf.org/doc/html/rfc1122) also mentions this in section 3.3.4 (Local Multihoming). Note that this RFC together with RFC 1123 are the foundational RFCs for the TCP/IP stack.
+- [This Microsoft TechNet article](https://learn.microsoft.com/en-us/previous-versions/technet-magazine/cc137807(v=msdn.10)).
+- [This appendix on the Treck Real-time TCP/IP stack users's manual](https://wiki.treck.com/Appendix_C:_Strong_End_System_Model_/_Weak_End_System_Model). Note that the first chapter seems to be a good introduction to the TCP/IP stack.
 
 Problems may arise if two network interfaces are configured with IPs in the same subnet. See https://duckduckgo.com/?q=network+interfaces+in+the+same+subnet. In particular:
 
-- [This SE question](https://serverfault.com/questions/415304/multiple-physical-interfaces-with-ips-on-the-same-subnet) mentions [Strong vs. Weak End System Models](https://wiki.treck.com/Appendix_C:_Strong_End_System_Model_/_Weak_End_System_Model).
+- [This SE question](https://serverfault.com/questions/415304/multiple-physical-interfaces-with-ips-on-the-same-subnet).
 - [This result](https://access.redhat.com/solutions/30564) by Red Hat and [this SE question](https://serverfault.com/questions/197752/several-ip-address-within-the-same-subnet-on-the-same-host).
+
+So in Linux one must assume that each network interface is connected to a different network. One of two situations may arise:
+
+1. Only one of the interfaces is capable of routing to hosts outside of the local network to which the interface is attached. All other network interfaces are connected to "isolated" local networks.
+2. Two or more interfaces are capable of routing to hosts outside of the local network to which the interfaces are attached. This is called _multihoming_. Two approaches are used to configure multihoming:
+	- Basic (uses static routes).
+	- Advanced (uses dynamic routing (BGP))
+
+Interesting links regarding multihoming:
+
+- [This SE question](https://unix.stackexchange.com/questions/200188/separate-network-traffic-on-two-network-interfaces).
+
+**Aggregation**
 
 Network aggregation (a.k.a Bonding, Teaming, Trunking, Bundling). Two main advantages: redundancy (via fail-over) and performance (via load-balancing).
 
