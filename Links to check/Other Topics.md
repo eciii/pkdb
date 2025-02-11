@@ -150,6 +150,13 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 ---
 
+**Building from source in Fedora/RPM**
+
+- https://fedoramagazine.org/how-rpm-packages-are-made-the-source-rpm/
+- https://rpm-packaging-guide.github.io/
+
+---
+
 **Security Lab at Amnesty International**
 
 - [Homepage](https://securitylab.amnesty.org/)
