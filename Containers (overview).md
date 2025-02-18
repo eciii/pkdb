@@ -54,8 +54,54 @@ Container-related software can be broadly categorized into:
 - **buildah**
 - **Project Moby**
 
-### Major projects
+### Major projects and project umbrellas
 
+**Moby**
 
-- [Moby project](https://mobyproject.org/) (upstream of some Docker projects)
+- Website: https://mobyproject.org
+- GitHub: https://github.com/moby
 
+Project umbrella created and mostly promoted by Docker Inc. It is a collection of components, assembly tools and reference assemblies that can be used to create custom container systems.
+
+- **datakit** (https://github.com/moby/datakit, OCaml): Connect processes into powerful data pipelines with a simple git-like filesystem interface
+- **vpnkit** (https://github.com/moby/vpnkit, OCaml): A toolkit for embedding VPN capabilities in your application
+- **swarmkit** (https://github.com/moby/swarmkit, Go): A toolkit for orchestrating distributed systems at any scale. It includes primitives for node discovery, raft-based consensus, task scheduling and more.
+- **libnetwork** (https://github.com/moby/libnetwork, Go): Networking for containers
+- **buildkit** (https://github.com/moby/buildkit, Go): Concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit
+- **hyperkit** (https://github.com/moby/hyperkit, C): A toolkit for embedding hypervisor capabilities in your application
+- **moby** (https://github.com/moby/moby, Go): A reference assembly that serves as upstream of dockerd. Note that there is no dockerd git repository anywhere, so this repository is de-facto the dockerd repository.
+
+Previous components that "spinned-off":
+
+- **runc** now at the Open Container Initiative (OCI)
+- **containerd** and **notary** now at the Cloud Native Computing Foundation (CNCF)
+- **distribution** now at the _distribution_ GitHub account
+- **linuxkit** now at the _linuxkit_ GitHub account
+
+---
+
+**Open Container Initiative (OCI)**
+
+- Website: https://opencontainers.org/
+- GitHub: https://github.com/opencontainers
+
+**runc** (https://github.com/opencontainers/runc, Go)
+CLI tool for spawning and running containers according to the OCI specification
+
+---
+
+_Owned by the Cloud Native Computing Foundation (CNCF)_
+
+**[containerd](https://github.com/containerd/containerd) Go** Created by [containerd](https://github.com/containerd)
+An open and reliable container runtime
+
+**[notary](https://github.com/notaryproject/notary) Go** Created by [notaryproject](https://github.com/notaryproject)
+Notary is a project that allows anyone to have trust over arbitrary collections of data
+
+_Owned by others (who? how independent are they from moby?)_
+
+**[linuxkit](https://github.com/linuxkit/linuxkit) Go** Created by [linuxkit](https://github.com/linuxkit)
+A toolkit for building secure, portable and lean operating systems for containers
+
+**[distribution](https://github.com/distribution/distribution) Go** Created by [distribution](https://github.com/distribution)
+The toolkit to pack, ship, store, and deliver container content
