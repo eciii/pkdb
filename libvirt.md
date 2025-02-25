@@ -1,2 +1,0 @@
-[Homepage](http://libvirt.org/)
-
