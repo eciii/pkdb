@@ -1,6 +1,8 @@
 #Linux_Technology
 
 
+- [SO question](https://stackoverflow.com/questions/10307323/whats-the-differences-between-xen-qemu-and-kvm) about the difference between Xen, KVM and QEMU
+
 **Virtualized networking**
 
 - [kvm - virt-manager: is it possible to assign specific IP addresses to certains VMs via the virtual DHCP? - Unix & Linux Stack Exchange](https://unix.stackexchange.com/questions/174884/virt-manager-is-it-possible-to-assign-specific-ip-addresses-to-certains-vms-via)
