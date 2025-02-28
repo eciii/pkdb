@@ -5,7 +5,7 @@ Homepage: https://www.virt-tools.org
 
 The list of projects can be broadly categorized in two groups:
 
-- A software stack (I'll call it _Virt stack_) that turns Linux into an hypervisor. The stack is composed of three projects:
+- A software stack (I'll call it the _QEMU+KVM stack_) that turns Linux into an hypervisor. The stack is composed of three projects:
 	- [KVM](http://www.linux-kvm.org/)
 	- [QEMU](http://qemu.org/)
 	- [libvirt](http://libvirt.org/).

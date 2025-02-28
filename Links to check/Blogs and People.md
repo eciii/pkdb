@@ -7,6 +7,7 @@
 - [Jonathan Mace](http://cs.brown.edu/people/jcmace/#Demos) and [here](https://people.mpi-sws.org/~jcmace/)
 - [Pēteris Ņikiforovs | peteris.rocks](https://peteris.rocks/)
 - [Blog of Julian Andres Klode](https://blog.jak-linux.org/)
+- https://medium.com/@techAsthetic (about ISAs and SoCs)
 
 **Interesting blog posts**
 

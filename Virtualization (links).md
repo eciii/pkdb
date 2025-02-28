@@ -1,6 +1,13 @@
 #Linux_Technology
 
 
+**Landscape**
+
+A **hypervisor** is a piece of software that is able to _supervise_ the concurrent execution of several OSes. Since an OS _supervises_ the concurrent execution of several processes, a hypervisor can be considered as a supervisor of supervisors, hence the name _hypervisor_.
+
+When an OS runs directly on hardware it runs with full privileges, i.e it can access all the resources provided by the hardware and execute all the instructions
+
+
 - [SO question](https://stackoverflow.com/questions/10307323/whats-the-differences-between-xen-qemu-and-kvm) about the difference between Xen, KVM and QEMU
 
 **Virtualized networking**
