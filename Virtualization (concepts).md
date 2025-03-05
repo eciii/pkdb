@@ -30,7 +30,7 @@ A machine instruction is **privileged** if it should only be executed in kernel-
 
 ##### Virtualization and the virtual sensitivity problem
 
-Virtualization is achieved once the following to qualities are met (these qualities were stated by Popek and Goldberg in a seminal paper in 1974):
+Virtualization is achieved once the following to qualities are met (these qualities were stated by Popek and Goldberg in a [seminal paper](https://dl.acm.org/doi/pdf/10.1145/361011.361073) in 1974):
 
 - **Controlled isolation:** The host has full control of the virtual environments where the guests run and ensures that the guests are not able to affect each other or the host.
 - **Fidelity:** The behavior of a guest running in a virtual machine should be identical to that of the same guest running in a physical machine with the same characteristics.
