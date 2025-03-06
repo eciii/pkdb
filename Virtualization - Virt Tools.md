@@ -5,7 +5,7 @@ Homepage: https://www.virt-tools.org
 
 The list of projects can be broadly categorized in two groups:
 
-- A software stack (I'll call it the _QEMU+KVM stack_) that turns Linux into an hypervisor. The stack is composed of three projects:
+- A software stack (I'll call it the _Virt stack_) that turns Linux into a hypervisor. The stack is composed of three projects:
 	- [KVM](http://www.linux-kvm.org/)
 	- [QEMU](http://qemu.org/)
 	- [libvirt](http://libvirt.org/).
@@ -14,7 +14,11 @@ The list of projects can be broadly categorized in two groups:
 	- [libguestfs](https://libguestfs.org/)
 	- [libosinfo](http://libosinfo.org/).
 
-A project related to the Virt toolkit is [Virt Viewer](https://gitlab.com/virt-viewer). It is not mentioned in the Virt Tools website but it is mentioned in the virt-manager website. There seems to be some confusion because the virt-manager website lists virt-viewer as part of its toolset but virt-viewer is nowhere under its Gitstore. In fact virt-viewer has its own Gitstore at https://gitlab.com/virt-viewer, but unusually has no website of its own.
+A project related to the Virt toolkit is [Virt Viewer](https://gitlab.com/virt-viewer). It is not mentioned in the Virt Tools website but it is mentioned in the virt-manager website. There seems to be some confusion because the virt-manager website lists virt-viewer as part of its toolset but virt-viewer is nowhere under its gitstore. In fact virt-viewer has its own gitstore at https://gitlab.com/virt-viewer, but unusually has no website of its own.
+
+Another project related to the Virt toolkit is [ndbkit](https://gitlab.com/nbdkit). It is also not mentioned in the Virt Tools website but some of its gitrepos were previously located under the gitstore of libguestfs. Now they live under the new ndbkit project, with gitstore https://gitlab.com/nbdkit but no website of its own.
+
+The Virt stack is the virtualization stack officially promoted and supported by Red Hat. This is described in the Red Hat blog post [All you need to know about KVM userspace](https://www.redhat.com/en/blog/all-you-need-know-about-kvm-userspace) by Paolo Bonzini (maintainer of KVM and Red Hat employee).
 
 ---
 
@@ -25,7 +29,7 @@ Overview of the projects:
 Website: https://libvirt.org/
 Gitstore: https://gitlab.com/libvirt
 
-libvirt is a library and daemon that provides a unified API for managing VMs and containers from several technologies/vendors including: QEMU, KVM, Xen, LXC, OpenVZ and [more](https://libvirt.org/drivers.html).
+libvirt is both a library and a daemon that provide a unified API for managing VMs and containers from several technologies/vendors including: QEMU, KVM, Xen, LXC, OpenVZ and [more](https://libvirt.org/drivers.html).
 
 **virt-manager (a.k.a Virtual Machine Manager)**
 
@@ -58,3 +62,8 @@ Gitstore: https://github.com/libguestfs
 
 Website: http://libosinfo.org/
 Gitstore: https://gitlab.com/libosinfo
+
+**ndbkit**
+
+Website: (none)
+Gitstore: https://gitlab.com/nbdkit

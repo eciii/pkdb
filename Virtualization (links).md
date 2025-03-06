@@ -3,9 +3,11 @@
 - [Talk](https://www.youtube.com/watch?v=8Qj3uw06ZeI): The story of Intel Virtualization Technology
 - [Talk](https://www.youtube.com/watch?v=--qKM3Qx4WU): Overview of the Xen Project: History, Architecture, and Players
 - [Magazine article](https://web.stanford.edu/group/comparch/papers/Computer_SmithNair.pdf): The Architecture of Virtual Machines (by the same authors of the book _Virtual Machines: Versatile Platforms for Systems and Processes_)
-- Literature:
-	- The book _Virtual Machines: Versatile Platforms for Systems and Processes_
-	- The chapter _Virtualization and the Cloud_ of Tanenbaum's book _Modern Operating Systems_
+
+Literature:
+
+- The book _Virtual Machines: Versatile Platforms for Systems and Processes_. A bit outdated (2005) but still a nice reference for virtualization fundamentals when virtualization was "all hype".
+- The chapter _Virtualization and the Cloud_ of Tanenbaum's book _Modern Operating Systems_. Also a bit outdated but still with solid fundamentals.
 
 **Virtualized networking**
 
