@@ -1,10 +1,10 @@
 ```
 SW Project --- Gitstore --< Gitrepos --< SW Deliverables
 
-Gitrepos --* Debian Source Package --< Debian Binary Package --< Files
+Gitrepos --* Distro Source Package --< Distro Binary Package --< Files
 ```
 
-Software deliverables can be categorized as:
+Software deliverables and their corresponding interfaces can be categorized as:
 
 - Executables
 	- Graphical applications (GUI)

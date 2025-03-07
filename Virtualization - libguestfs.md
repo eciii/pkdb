@@ -131,20 +131,22 @@ File system support packages:
 
 The default main packages are: `libguestfs-tools`, `guestfish`, `guestmount` and `libguestfs0`.    
 
+| Package            | File                                        | Related files             |
+| ------------------ | ------------------------------------------- | ------------------------- |
+| `libguestfs-tools` | `/usr/bin/libguestfs-test-tool`             | `man1`, `bash-completion` |
+| `libguestfs-tools` | `/usr/sbin/libguestfs-make-fixed-appliance` | `man1`                    |
+| `guestfish`        | `/usr/bin/guestfish`                        | `man1`, `bash-completion` |
+| `guestfish`        | `/usr/bin/virt-copy-in`                     | `man1`, `bash-completion` |
+| `guestfish`        | `/usr/bin/virt-copy-out`                    | `man1`, `bash-completion` |
+| `guestfish`        | `/usr/bin/virt-rescue`                      | `man1`, `bash-completion` |
+| `guestfish`        | `/usr/bin/virt-tar-in`                      | `man1`, `bash-completion` |
+| `guestfish`        | `/usr/bin/virt-tar-out`                     | `man1`, `bash-completion` |
+| `guestmount`       | `/usr/bin/guestmount`                       | `man1`, `bash-completion` |
+| `guestmount`       | `/usr/bin/guestunmount`                     | `man1`, `bash-completion` |
+ **_TODO:_** Finish the categorization of these files
+ 
 ```
-libguestfs-tools  /usr/bin/libguestfs-test-tool              [man1, bash-completion]
-libguestfs-tools  /usr/sbin/libguestfs-make-fixed-appliance  [man1]
-
-guestfish         /usr/bin/guestfish                         [man1, bash-completion]
-guestfish         /usr/bin/virt-copy-in                      [man1, bash-completion]
-guestfish         /usr/bin/virt-copy-out                     [man1, bash-completion]
-guestfish         /usr/bin/virt-rescue                       [man1, bash-completion]
-guestfish         /usr/bin/virt-tar-in                       [man1, bash-completion]
-guestfish         /usr/bin/virt-tar-out                      [man1, bash-completion]
 guestfish         /etc/libguestfs-tools.conf                 [man5]
-
-guestmount        /usr/bin/guestmount                        [man1, bash-completion]
-guestmount        /usr/bin/guestunmount                      [man1, bash-completion]
 
 
 libguestfs0       /usr/lib/x86_64-linux-gnu/guestfs/supermin.d/base.tar.gz
