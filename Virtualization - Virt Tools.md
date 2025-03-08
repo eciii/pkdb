@@ -39,7 +39,7 @@ Gitstore: https://github.com/virt-manager
 The gitstore contains three gitrepos:
 
 - virt-manager: Desktop application to manage QEMU/KVM/Xen VMs and LXC containers, all of them via libvirt. It also includes three command-line tools:
-	- `virt-install`: automates the installation of OS in VMs (uses libosinfo)
+	- `virt-install`: automates the installation of OSes in VMs (uses libosinfo)
 	- `virt-clone`: clones existing inactive guests
 	- `virt-xml`: simplifies the editing of libvirt domain XMLs
 - virt-bootstrap: Command-line tool that provides an easy way to setup the root file system for LXC containers.

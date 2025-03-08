@@ -170,3 +170,4 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 - [htop explained | peteris.rocks](https://peteris.rocks/blog/htop/)
 - [Google SRE Books](https://sre.google/books/)
 - [Linux from scratch](https://www.linuxfromscratch.org/)
+- The [Open Build Service](https://openbuildservice.org/) project
