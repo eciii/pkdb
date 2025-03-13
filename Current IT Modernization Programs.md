@@ -1,8 +1,3 @@
-**Preamble**
-
-- _Digital world_ in contrast to _physical world_.
-- The digital world emerges from the _processing_, _transmission_, and _storage_ of _digital information_ (the _digital information triad_).
-- _IT_ is the concept that comprises all the technologies that enable the realization of the digital information triad. An _IT system_ is a concrete implementation of such technologies.
 
 **Subtopics of IT Modernization**
 
