@@ -22,3 +22,10 @@ Form-factors:
 
 
 [Developer resources](https://developers.yubico.com/), [GitHub](https://github.com/Yubico).
+
+---
+
+**Links**
+
+- Fedora Magazine article: [How to use a YubiKey with Fedora Linux](https://fedoramagazine.org/how-to-use-a-yubikey-with-fedora-linux/)
+- LWN article about a FOSSDEM 2023 talk: [Passwordless authentication with FIDO2—beyond just the web](https://lwn.net/Articles/923656/)

@@ -19,6 +19,10 @@ Links to articles that try to sort out the mess of the container software ecosys
 - [Confusing Terms In Container Ecosystem](https://nikhilsoni.me/2019/04/05/confusing-terms-in-container-ecosystem/)
 - [The differences between Docker, containerd, CRI-O and runc](https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/)
 - [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction)
+- About the history of Docker and Kubernetes:
+	- https://www.infoq.com/news/2014/06/dockercon2014/
+	- https://increment.com/containers/docker-ce-and-ee/
+	- https://thenewstack.io/a-kubernetes-documentary-shares-googles-open-source-story/
 
 ### Implementations
 
@@ -65,7 +69,7 @@ Project umbrella created and mostly promoted by Docker Inc. It is a collection o
 
 The projects within the project umbrella include:
 
-_\[TODO: Check out all the repos in the GitHub account to make this list comprehensive. Also sort out which projects are "components", which are "assembly tools" and which are "reference assemblies", and how each one relates to the others]_
+_\[TODO: Check out all the repos in the GitHub account to make this list comprehensive. Also sort out which projects are "components", which are "assembly tools" and which are "reference assemblies", and how they relate to one another]_
 
 - **sys** (Go): No description in GitHub but this package is used by runc
 - **datakit** (OCaml): Connect processes into powerful data pipelines with a simple git-like filesystem interface

@@ -352,3 +352,4 @@ Missing considerations:
 	- The members of a class must be defined in a struct and the methods are all methods of that struct.
 	- The struct behaves like a public anonymous section, that is, whatever is private in the struct remains private and whatever is public in the struct is also public outside of the class.
 - Emulation of "structured enums" (like the enums in Rust) in Go using "union structs" with "union keys".
+- Regarding the **Outline discipline** of software development (as described above) I need to determine how to handle structs and classes. Are they the same concept? If not, what are the differences?
