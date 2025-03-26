@@ -89,9 +89,9 @@ where the options are
 --sm-unregister
 
 
-----------
-operations
-----------
+------------------
+sysprep operations
+------------------
 
 # Remove "generic" files
 * backup-files

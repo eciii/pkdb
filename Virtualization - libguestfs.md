@@ -57,7 +57,7 @@ Additional components are provided to handle Windows guests:
 
 ## Git repositories
 
-The gitstore is https://github.com/libguestfs. The "Debian" column shows if the repository has a corresponding Debian source package (of the same name).
+The gitstore is https://github.com/libguestfs. The following is a list of active gitrepos in the gitstore. The "Debian" column shows if the repository has a corresponding Debian source package (of the same name).
 
 | Repository                  | Language | Debian | Description                                                               |
 | --------------------------- | -------- | ------ | ------------------------------------------------------------------------- |
@@ -83,7 +83,13 @@ Archived/unmaintained repositories:
 
 #### Source package `libguestfs`
 
-The binary packages can be divided in three categories: main packages, language bindings packages and file system support packages. Note that not all packages are installed by default on Debian 12 with `apt install libguestfs-tools`. Those that do are marked in the "Default" column.
+The binary packages can be divided in three categories:
+
+- main packages
+- language binding packages
+- file system support packages
+
+Note that not all packages are installed by default on Debian 12 with `apt install libguestfs-tools`. Those that do are marked in the "Default" column.
 
 Main packages:
 
