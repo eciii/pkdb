@@ -25,7 +25,29 @@ Form-factors:
 
 ---
 
-The following is a list of Ubuntu packages whose homepage is 
+The following is a handcrafted list of Ubuntu (24.04 LTS) packages related to Yubico:
+
+| BIN PACKAGE             | SRC PACKAGE             | HOMEPAGE                                               | DESCRIPTION                                                    |
+| ----------------------- | ----------------------- | ------------------------------------------------------ | -------------------------------------------------------------- |
+| libpam-yubico           | yubico-pam              | https://developers.yubico.com/yubico-pam/              | two-factor password and YubiKey OTP PAM module                 |
+| libykclient3            | ykclient                | https://developers.yubico.com/yubico-c-client/         | Yubikey client library runtime                                 |
+| libykclient-dev         | ykclient                | https://developers.yubico.com/yubico-c-client/         | Yubikey client library development files                       |
+| libykpers-1-1           | yubikey-personalization | https://developers.yubico.com/yubikey-personalization/ | Library for personalization of YubiKey OTP tokens              |
+| libykpers-1-dev         | yubikey-personalization | https://developers.yubico.com/yubikey-personalization/ | Development files for the YubiKey OTP personalization library  |
+| libykpiv2               | yubico-piv-tool         | https://developers.yubico.com/yubico-piv-tool/         | Library for communication with the YubiKey PIV smartcard       |
+| libykpiv-dev            | yubico-piv-tool         | https://developers.yubico.com/yubico-piv-tool/         | Development files for the YubiKey PIV Library                  |
+| libyubikey0             | libyubikey              | https://developers.yubico.com/yubico-c/                | Yubikey OTP handling library runtime                           |
+| libyubikey-dev          | libyubikey              | https://developers.yubico.com/yubico-c/                | Yubikey OTP library development files                          |
+| libyubikey-udev         | yubikey-personalization | https://developers.yubico.com/yubikey-personalization/ | udev rules for unprivileged access to YubiKeys                 |
+| python3-ykman           | yubikey-manager         | https://developers.yubico.com/yubikey-manager/         | Python 3 library for configuring a YubiKey                     |
+| python3-yubico          | python-yubico           | https://developers.yubico.com/python-yubico/           | Python3 library for talking to Yubico YubiKeys                 |
+| python-yubico-tools     | python-yubico           | https://developers.yubico.com/python-yubico/           | Tools for Yubico YubiKeys                                      |
+| ykcs11                  | yubico-piv-tool         | https://developers.yubico.com/yubico-piv-tool/         | PKCS#11 module for the YubiKey PIV applet                      |
+| yubico-piv-tool         | yubico-piv-tool         | https://developers.yubico.com/yubico-piv-tool/         | Command line tool for the YubiKey PIV applet                   |
+| yubikey-manager         | yubikey-manager         | https://developers.yubico.com/yubikey-manager/         | Python library and command line tool for configuring a YubiKey |
+| yubikey-manager-qt      | yubikey-manager-qt      | https://developers.yubico.com/yubikey-manager-qt/      | Graphical application for configuring a YubiKey                |
+| yubikey-personalization | yubikey-personalization | https://developers.yubico.com/yubikey-personalization/ | Personalization tool for Yubikey OTP tokens                    |
+| yubioath-desktop        | yubioath-desktop        | https://developers.yubico.com/yubioath-desktop/        | Graphical interface for displaying OATH codes with a Yubikey   |
 
 ---
 
