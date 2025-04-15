@@ -1,4 +1,5 @@
-I can think of four general use cases:
+
+I can think of four general use cases for VMs:
 
 - Short-lived local VMs for quick experiments:
 	- Only the `root` user

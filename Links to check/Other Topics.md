@@ -68,12 +68,6 @@ Postfix (MTA, in particular SMTP client and server)
 Procmail (MDA)
 Dovecot (IMAP/POP3 server (for mail storage))
 
----
-
-**Linux Networking**
-
-- The [personal website of Martin A. Brown](http://linux-ip.net/) has multiple documentation resources about linux networking (maybe a bit outdated but worth checking out). In particular there is the [Guide to IP Layer Network Administration With Linux](http://linux-ip.net/pages/the-guide.html).
-- The [personal website of David Guyton](https://datahacker.blog/) has multiple documentation resources about very disparate technology stuff. In particular the [section about linux networking](https://datahacker.blog/industry/technology-menu/networking) seems worth checking out.
 
 ---
 
@@ -154,6 +148,12 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 - https://fedoramagazine.org/how-rpm-packages-are-made-the-source-rpm/
 - https://rpm-packaging-guide.github.io/
+
+---
+
+**Fritz! Box and Wireguard**
+
+- https://techzle.com/fritz-box-set-and-use-wireguard-vpn-connections
 
 ---
 

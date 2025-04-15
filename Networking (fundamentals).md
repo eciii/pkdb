@@ -109,3 +109,14 @@ WAN Networking:
 
 - The [Open Network Install Environment (ONIE)](https://opencomputeproject.github.io/onie) is a Linux/BusyBox OS preinstalled as firmware in networking hardware. It allows the installation of a Networking OS (NOS) to manage the hardware.
 - The NOS offered by DELL is the OS10.
+
+
+**Virtual Networking**
+
+- [Blog posts of Hangbin Liu](https://developers.redhat.com/author/hangbin-liu) in the [Red Hat Developer](https://developers.redhat.com/) portal. In particular the post _Introduction to Linux interfaces for virtual networking_.
+
+
+**Linux Networking**
+
+- The [personal website of Martin A. Brown](http://linux-ip.net/) has multiple documentation resources about linux networking (maybe a bit outdated but worth checking out). In particular there is the [Guide to IP Layer Network Administration With Linux](http://linux-ip.net/pages/the-guide.html).
+- The [personal website of David Guyton](https://datahacker.blog/) has multiple documentation resources about very disparate technology stuff. In particular the [section about linux networking](https://datahacker.blog/industry/technology-menu/networking) seems worth checking out.
