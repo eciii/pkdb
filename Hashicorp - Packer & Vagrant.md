@@ -1,5 +1,5 @@
 
-**Fact:** Each Hashicorp product used to have a separate website for the corresponding community version (e.g https://www.packer.io for Packer and https://www.vagrantup.com for Vagrant) but, after the IBM acquisition, each one of those websites now redirect to the docsite of the corresponding product.
+**Fact:** Each Hashicorp product used to have a separate website for the corresponding community version (e.g `packer.io` for Packer and `vagrantup.com` for Vagrant). However, after the IBM acquisition, each one of those websites now redirect to the docsite of the corresponding product.
 
 **Fact:** There is only one big fat gitstore for all Hashicorp products: https://github.com/hashicorp.
 
@@ -13,6 +13,10 @@ Gitrepo: https://github.com/hashicorp/packer
 Docsite: https://developer.hashicorp.com/packer
 
 Note that there are also [several others](https://github.com/orgs/hashicorp/repositories?q=packer) Packer-related gitrepos in the same gitstore.
+
+**Integration with the Virt stack**
+
+Packer has an official plugin for QEMU: https://developer.hashicorp.com/packer/integrations/hashicorp/qemu. Note that this plugin uses QEMU directly instead of using it through libvirt.
 
 ---
 ### Vagrant
