@@ -1,20 +1,32 @@
 #Linux_Technology
 
-Full virtualization
+**Simulation vs Emulation**
 
-- The goal is: create a virtual environment that emulates a physical machine in such a way that an OS can be executed within that environment without it ever noticing that it is being executed in a virtual environment instead of a physical one.
+Simulation is just enough imitation to achieve a specific goal. The adjective _just enough_ is essential in the definition. The art of simulation resides in the ability to simulate just the most essentials characteristics of the simulated subject, and nothing more, in order to minimize the amount of effort spent, while still achieving the goal of the simulation.
+
+Emulation, on the other side, is perfect imitation, to the point that an emulation might even surpass the qualities of the emulated subject. Emulation is the "effort to equal or excel in qualities that one admires in another".
+
+**Virtualization**
+
+Meaning of _virtual_: "being something in essence or effect not in fact". The opposite of _actual_. In the context of computer systems: "not physically existing but made to appear by software".
+
+A _virtual machine_ is an environment, created purely by software, that emulates an actual physical computer system.
+
+Virtualization
+
+- The goal is to create a virtual machines. Perfect imitation (i.e emulation) is achieved when any OS executed on such virtual machines is able to run without it ever noticing that it is being executed in a virtual machine instead of a physical one.
 - Part of the goal is to run _unmodified_ OSes.
 - It's all about deception.
 
-Full Paravirtualization
+Paravirtualization
 
-- The goal is: implement an interface that allows OSes to interact with the host for everything they need.
+- The goal is: implement an interface that allows guest OSes to interact with the host for everything they need.
 - Thus no emulated hardware environments are needed.
 - Thus only _modified_ OSes can run on such host.
 - It's all about cooperation.
 
-
 VMware implemented _full virtualization_ in 1998
+
 ##### Sensible and privileged machine instructions
 
 A machine instruction is **sensible** if its behavior when executed in kernel-mode is different than its behavior when executed in user-mode.
