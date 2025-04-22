@@ -3,7 +3,7 @@ The processor executes instructions in order by default. Jumps are allowed as pa
 - Sudden interruptions because of an I/O event (_Interrupts_)
 - Intentional requests to the kernel (_system calls_; implemented using _traps_? what's the difference?)
 - Unintentional abnormal/erroneous instructions (_exceptions_). Two types can be distinguished:
-    - _Faults_ might be recoverable ( from the point of view of the CS, but the OS may decide never to recover)
+    - _Faults_ might be recoverable (from the point of view of the CS, but the OS may decide never to recover)
     - _Aborts_ are never recoverable
 
 Interrupts are asynchronous whereas traps and exceptions are synchronous.

@@ -14,18 +14,18 @@ A _virtual machine_ is an environment, created purely by software, that emulates
 
 Virtualization
 
-- The goal is to create a virtual machines. Perfect imitation (i.e emulation) is achieved when any OS executed on such virtual machines is able to run without it ever noticing that it is being executed in a virtual machine instead of a physical one.
+- The goal is to create virtual machines. Perfect imitation (i.e emulation) is achieved when any OS executed on such virtual machines is able to run without it ever noticing that it is being executed in a virtual machine instead of a physical one.
 - Part of the goal is to run _unmodified_ OSes.
 - It's all about deception.
 
 Paravirtualization
 
-- The goal is: implement an interface that allows guest OSes to interact with the host for everything they need.
+- The goal is to implement an interface that allows guest OSes to interact with the host for everything they need.
 - Thus no emulated hardware environments are needed.
 - Thus only _modified_ OSes can run on such host.
 - It's all about cooperation.
 
-VMware implemented _full virtualization_ in 1998
+VMware implemented virtualization in 1998. Later, around 2003, Xen implemented paravirtualization. Back then the question was whether to use virtualization of paravirtualization. Nowadays, with KVM and VirtIO, there is almost a "continuous" spectrum between full virtualization (as implemented by QEMU with the Tiny Code Generator (TCG)) and full paravirtualization (as implemented by XEN back when it started).
 
 ##### Sensible and privileged machine instructions
 
