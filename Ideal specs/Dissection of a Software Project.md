@@ -7,8 +7,9 @@ Gitrepos --* Distro Source Package --< Distro Binary Package --< Files
 Software deliverables and their corresponding interfaces can be categorized as:
 
 - Executables
-	- Graphical applications (GUI)
-	- Command-line tools (CLI)
+	- For users
+		- Graphical applications (GUI)
+		- Command-line tools (CLI)
 	- Deamons (IPC Interface)
 - Libraries
 	- Interpreted or statically linked (API)

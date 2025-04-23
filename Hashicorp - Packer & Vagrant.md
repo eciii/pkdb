@@ -3,7 +3,7 @@
 
 **Fact:** There is only one big fat gitstore for all Hashicorp products: https://github.com/hashicorp.
 
-**Fact:** The docsites of all Hashicorp products are located under https://developer.hashicorp.com.
+**Fact:** The docsites of all Hashicorp products are all located under https://developer.hashicorp.com.
 
 ---
 ### Packer
