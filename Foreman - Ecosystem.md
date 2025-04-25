@@ -44,3 +44,5 @@ Documentation: currently under https://docs.theforeman.org
 
 - Website: https://www.candlepinproject.org
 - Gitstore: https://github.com/candlepin
+
+Note that the `subscription-manager` tool is part of this project and have its own gitrepo at https://github.com/candlepin/subscription-manager.
