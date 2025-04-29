@@ -1,0 +1,12 @@
+
+- LWN article series:
+	- [Docker and the OCI container ecosystem](https://lwn.net/Articles/902049/)
+	- [The container orchestrator landscape](https://lwn.net/Articles/905164/)
+	- [LXC and LXD: a different container story](https://lwn.net/Articles/907613/)
+- [Confusing Terms In Container Ecosystem](https://nikhilsoni.me/2019/04/05/confusing-terms-in-container-ecosystem/)
+- [The differences between Docker, containerd, CRI-O and runc](https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/)
+- [A Practical Introduction to Container Terminology](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction)
+- About the history of Docker and Kubernetes:
+	- https://www.infoq.com/news/2014/06/dockercon2014/
+	- https://increment.com/containers/docker-ce-and-ee/
+	- https://thenewstack.io/a-kubernetes-documentary-shares-googles-open-source-story/
