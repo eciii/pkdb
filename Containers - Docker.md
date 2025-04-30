@@ -58,3 +58,7 @@ On March 2013, in a [talk](https://www.youtube.com/watch?v=wW9CAH9nSLs) at  PyCo
 One year later, with the release of version 0.9, Docker replaced LXC with its own component, _libcontainer_, which was also written in the Go programming language.
 
 On October 29, 2013 dotCloud was renamed Docker.
+
+-
+
+In 2015 Docker Inc and the Linux Foundation formed the Open Container Initiative (OCI) to standardize some of the components inside the Docker Engine, namely the image format, the container runtime (which was back then a Go library known as libcontainer) and the container registry API. The libcontainer component was removed from the Docker Engine and donated to the OCI with the new name of runc.
