@@ -28,6 +28,7 @@ Institutionen:
 - Föderale IT-Kooperation: [FITKO](https://www.fitko.de/)
 - [govdigital](https://www.govdigital.de/)
 - Zentrum Digitale Souveränität: [ZenDiS GmbH](https://zendis.de/).
+- [ITZBund](https://www.itzbund.de)
 - [DigitalService](https://digitalservice.bund.de/)
 - [Bayerisches Staatsministerium für Digitales](https://www.stmd.bayern.de/)
 

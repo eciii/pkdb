@@ -70,7 +70,7 @@ The GNOME project also provides a GUI application for secrets management called 
 
 ---
 
-I'm getting an error when I try to use `secret-tool` in Audi. The error is described in this [SE post](https://unix.stackexchange.com/questions/473528/how-do-you-enable-the-secret-tool-command-backed-by-gnome-keyring-libsecret-an). As a solution I think the following should work:
+I'm getting an error when I try to use `secret-tool`. The error is described in this [SE post](https://unix.stackexchange.com/questions/473528/how-do-you-enable-the-secret-tool-command-backed-by-gnome-keyring-libsecret-an). As a solution I think the following should work:
 
 - Create a _custom_ keyring for root (i.e not the default login keyring)
-- Users of the `automation` group should be able to access the keyring with a combination of `sudo` and `dbus-send`.
+- Users of a given group should be able to access the keyring with a combination of `sudo` and `dbus-send`.
