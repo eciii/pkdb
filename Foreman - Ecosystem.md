@@ -6,6 +6,7 @@ The Red Hat Satellite project is the integration of several open source projects
 	- The Web UI
 	- A plugin system
 	- _Provisioning and Configuration Management_ functionality
+	- _Monitoring_ functionality
 - **Katello**: A Foreman plugin. It provides/integrates:
 	- _Content and Patch Management_ functionality using **Pulp**
 	- _Subscription and Entitlement Management_ functionality using **Candlepin**

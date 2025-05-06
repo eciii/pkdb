@@ -3,13 +3,14 @@ TODO: Define "cloud"
 
 To implement clouds:
 
-- OpenStack
-- CloudStack
-- oVirt
-- KubeVirt
-- Proxmox
-- VMware
-
+- Public Clouds (multi-tenant):
+	- OpenStack
+	- CloudStack
+	- oVirt
+- Enterprise Clouds (private):
+	- KubeVirt
+	- Proxmox
+	- VMware
 
 To implement hybrid clouds:
 
