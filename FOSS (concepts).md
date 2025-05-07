@@ -39,3 +39,74 @@ _Open core_ projects are software projects where:
 - A single for-profit enterprise has full trademark rights and administrative power (e.g ownership of the DNS domain). Thus they have no CG.
 - There is a _Community Edition_ (CE) and an _Enterprise Edition_ (EE) of the software products:
 	- The CE is open source, but the source might or might not have a "free" license.
+
+---
+
+**Internet resources**
+
+Homepage
+Documentation
+
+Git repositories (read-only)
+
+- Bare (self-hosted)
+- Browser
+	- cgit (self-hosted)
+	- GitLab (self-hosted or as-a-service)
+	- GitHub (as-a-service)
+
+Email-Patch / Pull-Request
+Issue tracker
+
+In general an _open software project_ required the following resources available on the internet:
+- Source code
+- Discussions:
+	- Help on Usage: For users that intend to "just use" the software and don't have any a priori motivation to contribute back.
+	- Actual issues with the software -> Might lead to fixes (patches)
+	- Enhancement proposals -> Might lead to enhancements (patches)
+
+Source code availability: In the old days source code was made available using _versioned released trees_. However this practice was inconvenient for several reasons (elaborate this!) which led to the emergence of _source code management_ tools such as Git.
+
+**Links**
+
+Discussions:
+- Mailing lists:
+	- [Mailman](https://www.gnu.org/software/mailman/index.html): Used by many projects, for example those under freedesktop.org.
+	- [Patchwork](http://jk.ozlabs.org/projects/patchwork/): Used by the Linux Kernel project.
+- Instant messaging:
+	- XMPP/Jabber
+	- IRC
+	- Mastodon
+	- Matrix
+- Others:
+	- Mastodon
+	- Discourse
+
+---
+
+**Relations between concepts**
+
+```
+SW Project --- Gitstore --< Gitrepos --< SW Deliverables
+
+Gitrepos --* Distro Source Package --< Distro Binary Package --< Files
+```
+
+Software deliverables and their corresponding interfaces can be categorized as:
+
+- Executables
+	- For users
+		- Graphical applications (GUI)
+		- Command-line tools (CLI)
+	- Deamons (IPC Interface)
+- Libraries
+	- Interpreted or statically linked (API)
+	- Dynamically linked (ABI)
+
+**Code snippets**
+
+In Fedora (with DNF5) it is possible to query the metadata of all available packages in the package repositories. This allows us to search by software project in the name, source and url like this (`<SWP>` can be replaced with the actual name of a software project, for example `libguestfs` or `nbdkit`):
+
+```
+sudo dnf repoquery --qf '%{NAME};%{SOURCE_NAME};%{URL}\n' '*' | grep '<SWP>' | column -ts';' | less
+```
