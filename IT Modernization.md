@@ -44,3 +44,9 @@ Antwort der Bundesregierung bzgl. den Abhängigkeiten der Bundesregierung von So
 Projects regarding Digital Sovereignty:
 
 - _Sovereign Cloud:_ [Gaia-X](https://gaia-x.eu/)
+
+---
+
+To dig deeper:
+
+- Check the conferences about these topics in FOSDEM
