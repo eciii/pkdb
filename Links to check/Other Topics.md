@@ -1,4 +1,11 @@
 
+**"Formal versioning" & SemVer**
+
+- https://semver.org
+- https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred
+
+---
+
 **LMDB**
 
 - Maintained by [Symas](https://www.symas.com/). Official website at https://www.symas.com/lmdb.
