@@ -3,7 +3,7 @@
 The word "docker" might refer to:
 
 - The company. I'll refer to it as Docker Inc.
-- The binary that provides a command-line interface to interact with the docker daemon. The associated gitrepo is https://github.com/docker/cli. I'll refer to this project/componentas docker-cli.
+- The binary that provides a command-line interface to interact with the docker daemon. The associated gitrepo is https://github.com/docker/cli. I'll refer to this project/component as docker-cli.
 - The actual docker gitrepo https://github.com/docker/docker. This gitrepo contained the docker daemon. It now redirects to https://github.com/moby/moby. I'll refer to this project/component as moby-dockerd (to also distinguish it from the [[Containers - Moby|Moby]] project umbrella).
 
 ---
