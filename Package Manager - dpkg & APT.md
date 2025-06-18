@@ -1,3 +1,4 @@
+
 **Fact**: Configuration settings are stored in `.conf` files in `/etc/apt/apt.conf.d`. These files originate in various ways and from various sources (see section "Summary of files in `/etc/apt/apt.conf.d`" below).
 
 **Fact**: The `APT::LastInstalledKernel` mechanism.

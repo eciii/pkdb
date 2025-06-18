@@ -4,6 +4,19 @@ The source code of the Linux kernel and other related projects is located in a [
 
 ---
 
+**KernelCI**
+
+- Website: https://kernelci.org
+
+There was an [interesting talk](https://archive.fosdem.org/2023/schedule/event/graph_case_for_dag/) at FOSDEM 23 about the KernelCI project.
+
+Related CI projects:
+
+- CKI Project ([website](https://cki-project.org)) by Red Hat.
+- Google's syzbot.
+
+---
+
 **Useful git log commands**
 
 Display all the history in graph form: `git log --all --oneline --graph`.

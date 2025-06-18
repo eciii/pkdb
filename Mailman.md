@@ -1,0 +1,3 @@
+- Website: https://www.gnu.org/software/mailman
+- Gitstore: https://gitlab.com/mailman
+- Docssite: https://docs.mailman3.org

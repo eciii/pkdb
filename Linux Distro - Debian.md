@@ -13,6 +13,12 @@ Linux distribution (i.e OS based on the [[Linux kernel]]).
 
 ---
 
+**Package Management**
+
+**Fact:** Debian uses the [[Package Manager - dpkg & APT|dpkg & APT package management stack]].
+
+---
+
 **Debian Wiki**
 
 **Fact**: Articles in the wiki seem to be organized in hierarchical way. Directories themselves are also articles.

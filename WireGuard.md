@@ -4,6 +4,8 @@
 
 Implementations (among other related software) can be found in Donenfeld's official cgit website and/or in [WireGuard's official GitHub website](https://github.com/WireGuard).
 
+The development process of all official WireGuard-related projects uses a mailing list instead of a (nowadays usual) gitforge. The mailing list is located at Donenfeld's official mailman instance.
+
 An implementation can be either a **userspace implementation** or an **in-kernel implementation**. Userspace implementations are normally less performant than in-kernel implementations, since userspace implementations require additional context-switching for the processing of (UDP) packets.
 
 The **wireguard-tools** ([cgit](https://git.zx2c4.com/wireguard-tools)) project defines a number of tools to make it easier to work with current implementations. The tools are:
