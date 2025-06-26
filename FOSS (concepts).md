@@ -102,6 +102,9 @@ Software deliverables and their corresponding interfaces can be categorized as:
 - Libraries
 	- Interpreted or statically linked (API)
 	- Dynamically linked (ABI)
+	- Command-line tools (CLI)
+
+Note that some command-line tools are designed to be used by both users and programs. In such case those tools can also be considered "libraries" and not just tools for users.
 
 **Code snippets**
 
