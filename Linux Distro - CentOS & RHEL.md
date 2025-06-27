@@ -11,3 +11,11 @@
 **Package Management**
 
 **Fact:** CentOS uses the [[Pkg Manager - RPM & DNF|RPM & DNF package management stack]].
+
+---
+ 
+**Infrastructure**
+
+**Fact:** Gitforges.
+
+The sources of all packages are located in a gitforge at https://gitlab.com/redhat/centos-stream/rpms.
