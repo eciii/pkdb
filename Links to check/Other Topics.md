@@ -47,6 +47,13 @@ See https://www.baeldung.com/linux/shadow-passwords
 - [Introduction](https://nacl.cr.yp.to/index.html)
 - [Introduction - libsodium](https://doc.libsodium.org/)
 
+Other interesting crypto projects (while both projects publish their sources none of them is really open source):
+
+- https://www.stunnel.org
+- https://www.tarsnap.com and its [open source sub-projects](https://www.tarsnap.com/open-source.html): scrypt, kivaloo and spiped
+
+There is an interesting comparison of spiped and stunnel [here](https://www.tarsnap.com/open-source.html).
+
 ---
 
 **Terminals, consoles and ttys**
@@ -65,16 +72,6 @@ See https://www.baeldung.com/linux/shadow-passwords
 - https://wiki.archlinux.org/title/Power_management
 - https://www.freedesktop.org/software/systemd/man/systemd-sleep.html
 - https://www.kernel.org/doc/html/v4.15/admin-guide/pm/sleep-states.html
-
----
-
-**Email**
-
-GNU Mailutils (MUA ???, IMAP/POP3 client among others)
-Postfix (MTA, in particular SMTP client and server)
-Procmail (MDA)
-Dovecot (IMAP/POP3 server (for mail storage))
-
 
 ---
 
