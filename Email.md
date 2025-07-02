@@ -3,6 +3,7 @@ Some players to investigate and classify:
 
 - GNU Mailutils
 - Postfix
+- qmail
 - Procmail
 - Dovecot
 - Nullmailer
