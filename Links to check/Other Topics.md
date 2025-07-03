@@ -35,24 +35,6 @@ See https://www.baeldung.com/linux/shadow-passwords
 - Libraries that interface with it: pam, crypt(3)
 - Tools to encrypt/decrypt: openssl passwd, perl crypt, python crypt
 
----
-
-**Crypto and TLS**
-
-- [TLS best practices by Mozilla](https://wiki.mozilla.org/Security/Server_Side_TLS)
-- [Signing JWTs with Go's crypto/ed25519 - Blain Smith](https://blainsmith.com/articles/signing-jwts-with-gos-crypto-ed25519/)
-- [x/crypto/ssh: please provide unified parameter types for ed25519.PrivateKey · Issue #51974 · golang/go · GitHub](https://github.com/golang/go/issues/51974)
-- [OpenSSH public key file format? - Super User](https://superuser.com/questions/1477472/openssh-public-key-file-format)
-- [A Graduate Course in Applied Cryptography](https://toc.cryptobook.us/)
-- [Introduction](https://nacl.cr.yp.to/index.html)
-- [Introduction - libsodium](https://doc.libsodium.org/)
-
-Other interesting crypto projects (while both projects publish their sources none of them is really open source):
-
-- https://www.stunnel.org
-- https://www.tarsnap.com and its [open source sub-projects](https://www.tarsnap.com/open-source.html): scrypt, kivaloo and spiped
-
-There is an interesting comparison of spiped and stunnel [here](https://www.tarsnap.com/open-source.html).
 
 ---
 
