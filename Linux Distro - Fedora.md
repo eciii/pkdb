@@ -3,6 +3,8 @@
 
 **Fact:** Fedora uses the [[Pkg Manager - RPM & DNF|RPM & DNF package management stack]].
 
+**Fact:** The package `fedora-packager` sets up a working environment to create RPM packages for Fedora.
+
 ---
 
 **Infrastructure**

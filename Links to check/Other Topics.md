@@ -130,13 +130,6 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 
 ---
 
-**Building from source in Fedora/RPM**
-
-- https://fedoramagazine.org/how-rpm-packages-are-made-the-source-rpm/
-- https://rpm-packaging-guide.github.io/
-
----
-
 **Fritz! Box and Wireguard**
 
 - https://techzle.com/fritz-box-set-and-use-wireguard-vpn-connections

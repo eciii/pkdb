@@ -12,6 +12,8 @@
 
 **Fact:** CentOS uses the [[Pkg Manager - RPM & DNF|RPM & DNF package management stack]].
 
+**Fact:** The package `centos-packager` sets up a working environment to create RPM packages for CentOS. Note that there is a similar but different package for Fedora called `fedora-packager`.
+
 ---
  
 **Infrastructure**
