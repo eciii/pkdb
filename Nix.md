@@ -14,21 +14,21 @@ Unfortunately the documentation is a bit scattered across three different websit
 	- The "Learn" subpage collects links to several documentation resources.
 - https://wiki.nixos.org: Official NixOS Wiki.
 
-There are three main manuals:
+**Fact:** Documentation resources are being migrated from nixos.org to nix.dev.
 
-- https://nixos.org/manual/nix/stable: The 
-
----
-
-**Fact:** Migration of documentation resources from nixos.org to nix.dev.
-
-It seems that there is an effort to move all documentation resources from nixos.org to nix.dev. The status of the effort seems to be like this:
+It seems that there is an effort to move all documentation resources from nixos.org to nix.dev. The status of the effort seems to be this:
 
 The documentation resources that still remain on nixos.org are:
 
 - Two of the main manuals (nixpkgs and nixos, under `/manual/(nixpkgs|nixos)/stable`).
 - The "How Nix works" guide (`/guides/how-nix-works`).
 - The Nix Pills tutorial (`guides/nix-pills`).
+
+There are three main manuals:
+
+- Nix (package manager and language) at https://nix.dev/manual/nix/stable (previously https://nixos.org/manual/nix/stable)
+- Nixpkgs: https://nixos.org/manual/nixpkgs/stable
+- NixOS
  
 ---
 
