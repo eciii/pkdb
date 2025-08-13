@@ -27,7 +27,7 @@ The "_community_" is healthy if:
 
 A software project can have the following characteristics:
 
-- Its software product:
+- Its software products:
 	- are FOS (Free and Open Source), i.e their source code is open and has a "free" license
 	- have ODev (Open Development), i.e their development is made in the open
 - It has a HC (Healthy Community)
