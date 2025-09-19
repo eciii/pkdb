@@ -48,9 +48,7 @@ _External_
 	- at https://www.youtube.com/playlist?list=PLyzwHTVJlRc8yjlx4VR4LU5A5O44og9in
 	- beginner-oriented video lecture on all things Nix
 
-**Fact:** Some sections of `nix.dev` should be moved somewhere else.
-
-- 
+**Fact:** Some sections of `nix.dev` should be moved somewhere else. _\[which sections? where?]_
 
 ---
 
