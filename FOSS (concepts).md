@@ -1,5 +1,5 @@
 
-A **software product** is one or more pieces of software that are advertised, packaged and distributed as a unit.
+A **software product** is one or more pieces of software that are advertised/marketed, packaged and distributed as a unit.
 
 An **open-source software project** is a concentrated effort of a group of people, the **project participants**, that **contribute** to the production of one or more related software products.
 
@@ -44,28 +44,39 @@ _Open core_ projects are software projects where:
 
 **Internet resources**
 
-Homepage
-Documentation
+- Homepage
+- Documentation
 
-Git repositories (read-only)
+Public (read-only) git repositories:
 
-- Bare (self-hosted)
-- Browser
-	- cgit (self-hosted)
-	- GitLab (self-hosted or as-a-service)
-	- GitHub (as-a-service)
-
-Email-Patch / Pull-Request
-Issue tracker
+- One form of classification
+    - self-hosted
+    - managed
+        - by a non-profit
+        - by a for-profit
+- Another form of classification
+    - Bare only (thus necessarily self-hosted). This is very rare.
+    - Browsable (using some gitforge)
+- By gitforge
+    - cgit (self-hosted)
+    - GitLab (self-hosted or as-a-service)
+    - GitHub (as-a-service)
 
 In general an _open software project_ required the following resources available on the internet:
-- Source code
-- Discussions:
-	- Help on Usage: For users that intend to "just use" the software and don't have any a priori motivation to contribute back.
-	- Actual issues with the software -> Might lead to fixes (patches)
-	- Enhancement proposals -> Might lead to enhancements (patches)
 
-Source code availability: In the old days source code was made available using _versioned released trees_. However this practice was inconvenient for several reasons (elaborate this!) which led to the emergence of _source code management_ tools such as Git.
+- Source code. In the old days source code was made available using _versioned released trees_. However this practice was inconvenient for several reasons (elaborate this!) which led to the emergence of _source code management_ tools such as Git.
+- Discussions. There are mainly two types of discussions around an open software project:
+    - Help on Usage: For users that intend to "just use" the software and don't have any a priori motivation to contribute back.
+    - With intent to contribute:
+        - Actual issues with the software. Might lead to fixes.
+        - Enhancement proposals. Might lead to enhancements.
+
+Actual contributions are performed using one of two main mechanisms:
+
+- Email-Patch (git-agnostic)
+- Pull-Request (git-specific)
+
+Issue tracker
 
 **Links**
 
