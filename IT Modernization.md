@@ -50,3 +50,19 @@ Projects regarding Digital Sovereignty:
 To dig deeper:
 
 - Check the conferences about these topics in FOSDEM
+
+---
+
+**IPCEI CIS**
+
+_Important Projects of Common European Interest - Next Generation Cloud Infrastructure and Services_ (IPCEI CIS)
+
+(See Claude conversation for more info)
+
+- [Official Website](https://competition-policy.ec.europa.eu/state-aid/ipcei/approved-ipceis/cloud_en)
+- [8ra](https://www.8ra.com/)
+
+One of the projects belongs to SAP:
+
+- [ApeiroRA](https://apeirora.eu/)
+- [NeoNephos](https://neonephos.org/)
