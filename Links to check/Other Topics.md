@@ -1,4 +1,11 @@
 
+Image and video processing software:
+
+- Image processing: Imagemagick, Graphicsmagick, VIPS (see [this SO question](https://stackoverflow.com/questions/862051/what-is-the-difference-between-imagemagick-and-graphicsmagick) for a bit of context)
+- Video processing: FFmpeg (written by [Fabrice Bellard](https://en.wikipedia.org/wiki/Fabrice_Bellard), the creator of QEMU and a very prolific and interesting computer programmer)
+
+---
+
 **"Formal versioning" & SemVer**
 
 - https://semver.org
