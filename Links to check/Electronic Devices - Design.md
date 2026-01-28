@@ -19,3 +19,10 @@ Interesting FOSS EDA projects relevant for the design of digital electronic devi
 Misc links:
 
 - https://www.youtube.com/@RobertFeranec
+
+To read:
+
+- Complex Digital Hardware Design
+- Foundations of Analog and Digital Circuits
+- Computer Systems - A Programmer's Perspective (Chapter 4)
+- Open Circuits
