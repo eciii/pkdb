@@ -65,3 +65,5 @@ CoverDrop (a.k.a Secure Messaging in The Guardian app):
 Cloud Hypervisor
 
 Some Signal components?
+
+Redox

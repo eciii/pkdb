@@ -6,7 +6,16 @@ The recommended way to install Rust on Linux is using `rustup`, which is a comma
 
     $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
-and following the instructions. To update to a new version of Rust run
+and following the instructions. The standard installation (option 1) will:
+
+- install `rustup` metadata and toolchains  under `$HOME/.rustup`,
+- create the Cargo home directory at `$HOME/.cargo`,
+- add the `cargo`, `rustc` and `rustup` binaries (among others) to Cargo's bin directory located at `$HOME/.cargo/bin`,
+- add Cargo's bin directory to the PATH environment variable by appending the line `. "$HOME/.cargo/env"` to the files `.profile`, `.bash_profile` and `.bashrc` in the home directory. If the file doesn't exist it is created. That same line is later removed by `rustup` on uninstall.
+
+If the last point is not desired then the option 2 in the installer must be selected (custom installation). Then press enter to all the questions but the last one to select the default value (as in the standard installation). In the last question (modify PATH variable) choose "n" (for "no") and then proceed with the installation. After the installation is complete you have to manually add the line `source "$HOME/.cargo/env` in the desired place.
+
+To update to a new version of Rust run
 
     $ rustup update
 
@@ -195,10 +204,10 @@ and a `Cargo.toml` file with the following content
 
 The following concepts are introduced during the tutorial:
 
-- Rust's **standard library** is identified by `std`. Most of the items in the standard library must be brought into the scope of the program using the `use` keyword in order to be used. But some, namely those contained in the **prelude**, are always included into all programs.
+- Rust's **standard library** is identified by `std`. Most of the items in the standard library must be brought into the scope of the program using the `use` keyword to use them. But some, namely those contained in the **prelude**, are always included into all programs.
 - The `main` function is the entry point into the program.
 - The basic syntax is very C-like: parenthesis are used to enclose function arguments, curly braces are used to enclose function bodies and semicolons to terminate statements.
-- Functions whose name end in `!`, like `println!`, are in fact **macros**.
+- Functions whose name end in `!`, like `println!`, are **macros**.
 - The `let` keyword is used to declare variables.
 - The `mut` keyword is used during variable declaration to specify that the variable is **mutable**. This is because, in Rust, variables are **immutable** by default, which means that their value cannot be changed after initialization.
 - `String` is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text.
