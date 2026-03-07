@@ -151,6 +151,7 @@ This creates a `target/release` directory with the build products of the release
     $ target/release/hello_cargo 
     Hello, world!
 
+---
 ### Programming a Guessing Game (2)
 
 Step by step coding tutorial that results in a `src/main.rs` file with the following code
@@ -213,6 +214,7 @@ The following concepts are introduced during the tutorial:
 - `String` is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text.
 - The `::` syntax is used to specify hierarchies in library identifiers (like in `std::io`), to specify items within a library (like in `io::stdin()`) and to specify functions associated to a type (like in `String::new`).
 
+---
 ### Enums and Pattern Matching (6)
 
 _Enumerations_, also referred to as _enums_, allow us to define a type by enumerating its possible _variants_.
@@ -274,6 +276,52 @@ _TODO: similarities with structs..._
 
 _TODO..._
 
+---
+
+### Packages, Crates and Modules (7)
+
+#### Packages and Crates (7.1)
+
+Crates are the units of compilation, i.e. they are the smallest amount of code that the Rust compiler considers at a time.
+
+A crate can come in one of two forms: binary or library. _Binary crates_ are pieces of code that you can compile to an executable. Each binary crate must have a function called `main`. In contrast, _library crates_ don’t have a `main` function, and they don’t compile to an executable. Instead, they define functionality intended to be shared with multiple projects.
+
+Most of the time when Rustaceans say “crate,” they mean library crate, and they use “crate” interchangeably with the general programming concept of a “library.”
+
+The _crate root_ is the source file passed to the Rust compiler to start the compilation of a crate.
+
+A _package_ is a bundle of one or more crates that provides a set of functionality. A package contains a _Cargo.toml_ file that describes how to build those crates. A package can contain as many binary crates as you like, but at most only one library crate. A package must contain at least one crate, whether that’s a library or binary crate.
+
+_\[Packages are the units of library distribution. Since packages can contain at most only one library crate (and they, in fact, almost always do), they are used by Cargo to represent library crates for their distribution.]_
+
+An example of a very simple package is the following:
+
+```
+$ tree -aF
+./
+├── Cargo.toml
+└── src/
+    └── main.rs
+
+$ cat Cargo.toml
+[package]
+name = "my_package"
+
+$ cat src/main.rs 
+fn main() {
+    println!("Hello, world!");
+}
+```
+
+Cargo follows the following conventions:
+
+- If the package has a file `src/main.rs` then this file is treated as the crate root of a binary crate with the same name as the package.
+- If the package has a file of the form `src/bin/NAME.rs` then this file is treated as the crate root of a binary crate with name `NAME`. By placing several such files in the `src/bin` directory it is possible to include more than one binary crate in the package.
+- If the package has a file `src/lib.rs` then this file is treated as the crate root of _the_ single library crate represented by the package. This library crate has the same name as the package.
+
+Cargo passes the crate root files to `rustc` to build the library or binary.
+
+---
 ### Error Handling (9)
 
 Rust groups errors into two major categories: recoverable and unrecoverable errors:
