@@ -26,5 +26,10 @@ A **computer system** is an _electronic system_ (a.k.a _hardware_) that makes _g
 
 - _Digital world_ in contrast to _physical world_.
 - The digital world emerges from the _processing_, _transmission_, and _storage_ of _digital information_ (the _digital information triad_).
-- _IT_ is the concept that comprises all the technologies that enable the realization of the digital information triad. An _IT system_ is a concrete implementation of such technologies.
-- _IT Infrastructure_ is the concept that comprises the foundational structures and underlying IT systems necessary to sustain higher-level IT systems.
+- _IT_ is the concept that comprises all the technologies that enable the realization of the digital information triad. Such technologies can be mostly classified by the facet of the triad they enable:
+	- _Compute_ technologies enable the processing facet.
+	- _Networking_ technologies enable the transmission facet.
+	- Storage technologies enable the storage facet.
+- An _IT system_ is a concrete implementation of such technologies. IT systems are in general very complex because they are composed of several interrelated subsystems that span over several layers of abstraction.
+- The term _infrastructure_ refers to the foundational structures that emerge form the combination and consolidation of the lower-level subsystems in a system in order to sustain higher-level subsystems.
+- _IT Infrastructure_ refers to the foundational structures that emerge form the combination and consolidation of the lower-level subsystems in an IT system in order to sustain higher-level subsystems. The concept of IT infrastructure also encompasses the actual technologies used and the ways these technologies were integrated and interact with each other.
