@@ -57,7 +57,7 @@ RADOS objects live in named _pools_. Pools are logical containers for RADOS obje
 
 Pools can hold petabytes of data, which translates to bazillions of objects.
 
-Pools are uniformly partitioned into a number of _placement groups_. This number range form the 100s to the 1000s and is determined by the administrator of the cluster on a pool by pool basis.
+Pools are uniformly partitioned into a fixed number of _placement groups_. This number range form the 100s to the 1000s and is determined by the administrator of the cluster on a pool by pool basis.
 
 - Each placement group is replicated a number of times according to the pool's replication policy
 - Each replica is fully stored in an OSD. The OSD are chosen (pseudo)randomly according to the pool's placement policy.
