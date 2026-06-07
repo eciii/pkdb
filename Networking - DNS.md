@@ -45,7 +45,26 @@ The `resolve`service queries the `systemd-resolved` system service, which provid
 In theory the `resolve` service provided by systemd should be enough to replace the `dns` service provided by NSS, thus rendering the file `/etc/resolv.conf` useless. But in practice there are two issues:
 
 - Some existing software performs IP address resolution bypassing NSS altogether by directly performing DNS queries to the recursive DNS servers listed in `/etc/resolv.conf`. To force such software to use `systemd-resolved` a stub DNS server is provided by systemd which must be configured as the only DNS server in `/etc/resolv.conf`.
-- It can be argued that the `resolve` service can fail more easily because it relies on a system service to be running. Thus some recommend to still configure the `dns` service in the `hosts` database as a last resort. This argument is anyway a bit controversial: one can start considering the `systemd-resolved` system service as an "essential" system service that _must_ be running at all times, the same way one considers the init service of even the kernel as essential.
+- It can be argued that the `resolve` service can fail more easily because it relies on a system service to be running. Thus some recommend to still configure the `dns` service in the `hosts` database as a last resort. However this argument is a bit controversial: one can consider the `systemd-resolved` system service as an "essential" system service that _must_ be running at all times, the same way one considers the init service of even the kernel as essential.
+
+---
+
+In environments like data centers the network configuration, and thus also the DNS configuration, almost never change. In laptops, on the other hand, the network/DNS configuration must be updated every time the laptop is moved to a different "network environment" (e.g a different office, restaurant or home).
+
+This problem is mostly solved by [[Networking - DHCP|DHCP]]. In general DHCP clients always adjust DNS configuration as part of their automatic network configuration:
+
+- In systems that use the traditional `dns` service provided by NSS for IP address resolution, DHCP clients automatically adjust the `/etc/resolv.conf` file every time the network configuration changes.
+- In systems that use the newer `resolve` service provided by systemd, DHCP clients should be able to adjust the `systemd-resolved` service automatically (e.g by using DBus).
+
+This should be the case for the two most common DHCP client implementations nowadays: systemd-networkd and Network Manager.
+
+---
+
+A simpler and somewhat older mechanism for managing the `/etc/resolv.conf` file was provided by the _resolvconf_ program. There are some implementations of this program:
+
+- [resolvconf](https://salsa.debian.org/debian/resolvconf): The original implementation.
+- openresolv: A newer implementation by [[Networking (landscape)#^RoyMarples|RoyMarples]].
+- systemd-resolved: A limited just-for-compatibility implementation provided by systemd.
 
 ---
 
