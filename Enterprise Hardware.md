@@ -24,14 +24,12 @@ The local-network layer handles information in digital bits while the physical l
 
 There are two options for the location and form of the transceiver:
 
-- It can be an integrated chip on the NIC itself (also commonly called the _PHY chip_). In this case the port is "media-dependent", meaning that the physical media is already determined by the port. This is usually the case in low-end Ethernet NICs, which come with standard RJ45 ports (which means that only electrical cables can be used).  
-- The NIC can have "media-independent" ports. In this case the transceiver is a "modular" and "swappable" piece of hardware that is plugged into the port. Nowadays SFPs are used for that but  
+- It can be an integrated chip on the NIC itself (also commonly called the _PHY chip_). In this case the ports on the NIC are "media-dependent", meaning that the physical media is already determined by the ports. This is usually the case in low-end Ethernet NICs, which come with standard RJ45 ports (which means that only electrical cables can be used).  
+- The NIC can have "media-independent" ports. In this case the transceiver is a "modular" and "swappable" piece of hardware that is plugged into the port. Nowadays SFPs are used for that but _\[...]_
 
 A NIC has one or more _ports_, each one with its own transceiver. If the NIC has more than one port then the NIC exposes each of them separately to the machine. Thus the machine treats them independently; they just happen to share the same _expansion bus_. 
 
-
-
-
+---
 
 Fibre Channel is a **transport layer** protocol. It doesn't inherently "speak" storage commands - it needs a higher-level protocol on top of it.
 
@@ -40,12 +38,3 @@ The most common protocol used over Fibre Channel is **FCP (Fibre Channel Protoco
 There are other protocols that can run over FC too (like FICON for mainframes), but FCP/SCSI is by far the most common in standard server environments.
 
 So to directly answer your question: FC by itself isn't enough - you need SCSI commands (or another block storage protocol) running on top of it to actually communicate with storage devices.
-
----
-
-Hi, I'm trying to understand the typical devices attached to enterprise grade "hyperconverged" servers. I have the following list:
-
-- Network cards with network ports (ethernet and fiber)
-- Storage devices for OS (usually M.2 and in a RAID configuration)
-- Additional direct-attached storage
-- SAN cards

@@ -10,7 +10,7 @@
 
 ---
 
-Named entities are (typed) entities in an EITIE that are commonly identified by name. The most prevalent named entity types across EITIEs are hosts and users. Software that want to use named entities have to first lookup them up using their name. For a given entity type, this lookup process might require to search on several data sources according to some rules. Thus the lookup process is, more concretely, a resolution algorithm. A component that implements any such resolution algorithm for a given entity type is called a resolver for that type.
+Named entities are (typed) entities in an EITIE that are commonly identified by name. The most prevalent named entity types across EITIEs are hosts and users. Software that want to use named entities have to first look them up using their name. For a given entity type, this lookup process might require to search on several data sources according to some rules. Thus the lookup process is, more concretely, a resolution algorithm. A component that implements any such resolution algorithm for a given entity type is called a resolver for that type.
 
 Another very prevalent named entity type in EITIEs is the type that represents IP addresses. In fact, the global Internet infrastructure has already a very successful system for the conversion of names into IP addresses called Domain Name System (DNS). This system is so flexible and versatile that EITIEs can relatively easily implement local DNS systems and integrate them with the global DNS (similar to how local intranets can be implemented and integrated into the global Internet).
 

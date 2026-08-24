@@ -96,7 +96,7 @@ In this context, the trunk workflow also requires that the trunk must always be 
 _The trunk workflow discipline_
 
 - Standard commits exist only in tranches.
-- The main branch of a merge commit is always the trunk. The affluent branch of a merge commit is always a tranche.
+- The main branch of a merge commit is always the trunk. The affluent branch of a merge commit is always a tranch.
 - A tranch starts in _development mode_ and changes to _merge mode_ when a merge request for the tranch is created.
 - If a tranch is in development mode, the verification workflow is always performed against the tranch itself (as usual). If the tranch is in merge mode, the verification workflow is always performed against the merge result.
 - When a tranch gains new standard commits, the verification workflow is performed.
