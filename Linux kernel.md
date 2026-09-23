@@ -4,6 +4,10 @@ The source code of the Linux kernel and other related projects is located in a [
 
 ---
 
+Interesting course about Operating Systems with focus on the Linux kernel: https://students.mimuw.edu.pl/ZSO/index_en.html
+
+---
+
 **KernelCI**
 
 - Website: https://kernelci.org
