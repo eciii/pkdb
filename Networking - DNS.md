@@ -12,7 +12,7 @@
 
 Named entities are (typed) entities in an EITIE that are commonly identified by name. The most prevalent named entity types across EITIEs are hosts and users. Software that want to use named entities have to first look them up using their name. For a given entity type, this lookup process might require to search on several data sources according to some rules. Thus the lookup process is, more concretely, a resolution algorithm. A component that implements any such resolution algorithm for a given entity type is called a resolver for that type.
 
-Another very prevalent named entity type in EITIEs is the type that represents IP addresses. In fact, the global Internet infrastructure has already a very successful system for the conversion of names into IP addresses called Domain Name System (DNS). This system is so flexible and versatile that EITIEs can relatively easily implement local DNS systems and integrate them with the global DNS (similar to how local intranets can be implemented and integrated into the global Internet).
+Another very prevalent named entity type in EITIEs is the type that represents IP addresses. In fact, the global Internet infrastructure has already a very successful system for the conversion of names into IP addresses called Domain Name System (DNS). This system is so flexible and versatile that EITIEs can relatively easily implement local DNSes and integrate them with the global DNS (similar to how local intranets can be implemented and integrated into the global Internet).
 
 ---
 
@@ -68,11 +68,44 @@ A simpler and somewhat older mechanism for managing the `/etc/resolv.conf` file 
 
 ---
 
-https://en.wikipedia.org/wiki/Domain_Name_System
-https://en.wikipedia.org/wiki/Root_name_server
-https://en.wikipedia.org/wiki/DNS_zone
-https://curiousprogrammer.net/posts/2023-10-31-dns-recursive-resolution
-https://serverfault.com/questions/309622/what-is-a-glue-record
-https://wiki.archlinux.org/title/Domain_name_resolution
-https://wiki.archlinux.org/title/Systemd-resolved
-https://man.archlinux.org/man/systemd-resolved.8
+**Links**
+
+- https://en.wikipedia.org/wiki/Domain_Name_System
+- https://en.wikipedia.org/wiki/Root_name_server
+- https://en.wikipedia.org/wiki/DNS_zone
+- https://wiki.archlinux.org/title/Domain_name_resolution
+- https://wiki.archlinux.org/title/Systemd-resolved
+- https://man.archlinux.org/man/systemd-resolved.8
+- https://curiousprogrammer.net/posts/2023-10-31-dns-recursive-resolution
+- https://serverfault.com/questions/309622/what-is-a-glue-record
+
+---
+
+**Formal concepts around the meaning of A/AAAA and PTR records in local DNSes in EITIEs**
+
+I'll consider the meaning of A and PTR records but all the ideas should be valid if we replace A records with AAAA records.
+
+In DNS, A records offer a way to map names to IP addresses. Let `NAMES` be the set of all names currently in use and `IPs` be the set of all IP addresses available in the network. One might think naively that A records define a map/function form `NAMES` to `IPs`, but that's not actually the case. The DNS standard allows for multiple A records to have the same name, so long they have different values (i.e they point to different IP addresses). Thus what A records actually define is a _relation_ between `NAMES` and `IPs`, i.e a subset of `NAMES x IPs`.  And the same happens for PTR records: these records define a relation between `IPs` and `NAMES`. Let `A` be the relation on `NAMES x IPs` defined by the A records and let `PTR` be the relation on `IPs x NAMES` defined by the PTR records.
+
+We say that the `A` and `PTR` relations agree if `PTR` is the [converse](https://en.wikipedia.org/wiki/Converse_relation) of `A`. In such a case we then talk about _the_ `A/PTR`relation (over `NAMES x IPs`), since both relations are effectively the same.
+
+We can now formally state a very important principle:
+
+> There is absolutely no point in using PTR records if they don't agree with the corresponding A records. In such a case one might as well not use PTR records at all.
+
+This means that EITIEs have two options:
+
+- Not use PTR records at all.
+- Use PTR records but ensure that they agree with the A records at all timees.
+
+Now let's assume that we have an `A/PTR` relation. This condition alone allows for very wild configurations like:
+
+- Every name is associated with every IP address and vice versa (i.e the `A/PTR` relation is `NAMES x IPs`).
+- Every subgroup of `IPs` is associated with a different name.
+
+Such configurations make no sense in general but when applied to small subsets of `NAMES` and `IPs` they might have real-world use-cases like load-balancing and redundancy. However, for the vast majority of cases in EITIEs a simple 1-to-1 correspondence between names and IPs is enough.
+
+Thus tools for A and PTR record management in EITIEs should by default:
+
+- Either not use PTR records at all or ensure PTR records agree with A records at all times.
+- Assume the user wants a simple 1-to-1 correspondence between names and IP addresses, but also give options to handle more complex use-cases for specific sets of names and IP addresses.
