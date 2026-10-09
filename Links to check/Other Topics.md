@@ -157,4 +157,4 @@ Also I am very unfamiliar with many GitHub workflows like Pull Requests. It woul
 - [Google SRE Books](https://sre.google/books/)
 - [Linux from scratch](https://www.linuxfromscratch.org/)
 - The [Open Build Service](https://openbuildservice.org/) project
-- [Latency Numbers You Should Know in 2026](https://omarish.com/latency-numbers-you-should-know)
+- [Latency Numbers You Should Know in 2026](https://omarish.com/latency-numbers-you-should-know) ([[latency_numbers_log_scale.svg|here]] is an AI-generated visualization of it)

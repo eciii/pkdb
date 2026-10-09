@@ -1,0 +1,365 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1340" width="1100" height="1340" font-family="Helvetica, Arial, sans-serif">
+<rect width="1100" height="1340" fill="#ffffff"/>
+<style></style>
+<text x="550.0" y="46" text-anchor="middle" font-size="28" font-weight="700" fill="#1b1f27">Latency Numbers You Should Know (2026)</text>
+<text x="550.0" y="74" text-anchor="middle" font-size="14" fill="#555">Logarithmic scale · left: real time · right: “human scale”, where 1 ns is stretched to 1 second</text>
+<text x="328" y="106" text-anchor="middle" font-size="13" font-weight="700" fill="#444" letter-spacing="1.5">REAL / HUMAN</text>
+<text x="580" y="106" text-anchor="end" font-size="13" font-weight="700" fill="#444" letter-spacing="1.5">REAL TIME</text>
+<text x="700" y="106" font-size="13" font-weight="700" fill="#444" letter-spacing="1.5">HUMAN SCALE</text>
+<rect x="610" y="890" width="60" height="375" fill="#dbe8fb"/>
+<text transform="translate(645.0,1077.5) rotate(-90)" text-anchor="middle" font-size="15" font-weight="700" fill="#2a6fdb" fill-opacity="0.75" letter-spacing="3">NANOSECONDS</text>
+<rect x="610" y="515" width="60" height="375" fill="#d6f0ec"/>
+<text transform="translate(645.0,702.5) rotate(-90)" text-anchor="middle" font-size="15" font-weight="700" fill="#14917f" fill-opacity="0.75" letter-spacing="3">MICROSECONDS</text>
+<rect x="610" y="140" width="60" height="375" fill="#fbe6d2"/>
+<text transform="translate(645.0,327.5) rotate(-90)" text-anchor="middle" font-size="15" font-weight="700" fill="#d9731a" fill-opacity="0.75" letter-spacing="3">MILLISECONDS</text>
+<rect x="610" y="140" width="60" height="1125" fill="none" stroke="#333" stroke-width="1.5"/>
+<line x1="603" x2="610" y1="1227.4" y2="1227.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1227.4" y2="1227.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1205.4" y2="1205.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1205.4" y2="1205.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1189.7" y2="1189.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1189.7" y2="1189.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1177.6" y2="1177.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1177.6" y2="1177.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1167.7" y2="1167.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1167.7" y2="1167.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1159.4" y2="1159.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1159.4" y2="1159.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1152.1" y2="1152.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1152.1" y2="1152.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1145.7" y2="1145.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1145.7" y2="1145.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1102.4" y2="1102.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1102.4" y2="1102.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1080.4" y2="1080.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1080.4" y2="1080.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1064.7" y2="1064.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1064.7" y2="1064.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1052.6" y2="1052.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1052.6" y2="1052.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1042.7" y2="1042.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1042.7" y2="1042.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1034.4" y2="1034.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1034.4" y2="1034.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1027.1" y2="1027.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1027.1" y2="1027.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="1020.7" y2="1020.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="1020.7" y2="1020.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="977.4" y2="977.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="977.4" y2="977.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="955.4" y2="955.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="955.4" y2="955.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="939.7" y2="939.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="939.7" y2="939.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="927.6" y2="927.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="927.6" y2="927.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="917.7" y2="917.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="917.7" y2="917.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="909.4" y2="909.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="909.4" y2="909.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="902.1" y2="902.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="902.1" y2="902.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="895.7" y2="895.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="895.7" y2="895.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="852.4" y2="852.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="852.4" y2="852.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="830.4" y2="830.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="830.4" y2="830.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="814.7" y2="814.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="814.7" y2="814.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="802.6" y2="802.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="802.6" y2="802.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="792.7" y2="792.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="792.7" y2="792.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="784.4" y2="784.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="784.4" y2="784.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="777.1" y2="777.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="777.1" y2="777.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="770.7" y2="770.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="770.7" y2="770.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="727.4" y2="727.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="727.4" y2="727.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="705.4" y2="705.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="705.4" y2="705.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="689.7" y2="689.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="689.7" y2="689.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="677.6" y2="677.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="677.6" y2="677.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="667.7" y2="667.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="667.7" y2="667.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="659.4" y2="659.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="659.4" y2="659.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="652.1" y2="652.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="652.1" y2="652.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="645.7" y2="645.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="645.7" y2="645.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="602.4" y2="602.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="602.4" y2="602.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="580.4" y2="580.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="580.4" y2="580.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="564.7" y2="564.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="564.7" y2="564.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="552.6" y2="552.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="552.6" y2="552.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="542.7" y2="542.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="542.7" y2="542.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="534.4" y2="534.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="534.4" y2="534.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="527.1" y2="527.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="527.1" y2="527.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="520.7" y2="520.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="520.7" y2="520.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="477.4" y2="477.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="477.4" y2="477.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="455.4" y2="455.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="455.4" y2="455.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="439.7" y2="439.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="439.7" y2="439.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="427.6" y2="427.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="427.6" y2="427.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="417.7" y2="417.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="417.7" y2="417.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="409.4" y2="409.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="409.4" y2="409.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="402.1" y2="402.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="402.1" y2="402.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="395.7" y2="395.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="395.7" y2="395.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="352.4" y2="352.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="352.4" y2="352.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="330.4" y2="330.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="330.4" y2="330.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="314.7" y2="314.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="314.7" y2="314.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="302.6" y2="302.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="302.6" y2="302.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="292.7" y2="292.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="292.7" y2="292.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="284.4" y2="284.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="284.4" y2="284.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="277.1" y2="277.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="277.1" y2="277.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="270.7" y2="270.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="270.7" y2="270.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="227.4" y2="227.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="227.4" y2="227.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="205.4" y2="205.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="205.4" y2="205.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="189.7" y2="189.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="189.7" y2="189.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="177.6" y2="177.6" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="177.6" y2="177.6" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="167.7" y2="167.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="167.7" y2="167.7" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="159.4" y2="159.4" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="159.4" y2="159.4" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="152.1" y2="152.1" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="152.1" y2="152.1" stroke="#777" stroke-width="1"/>
+<line x1="603" x2="610" y1="145.7" y2="145.7" stroke="#777" stroke-width="1"/>
+<line x1="670" x2="677" y1="145.7" y2="145.7" stroke="#777" stroke-width="1"/>
+<polyline points="610,250.8 500,250.8 450,250.8 404,250.8" fill="none" stroke="#d9731a" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,288.4 500,288.4 450,288.4 404,288.4" fill="none" stroke="#d9731a" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,368.0 500,368.0 450,368.0 404,368.0" fill="none" stroke="#d9731a" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,402.1 500,402.1 450,402.1 404,402.1" fill="none" stroke="#d9731a" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,427.6 500,427.6 450,427.6 404,427.6" fill="none" stroke="#d9731a" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,580.4 500,580.4 450,580.4 404,580.4" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,618.0 500,618.0 450,618.0 404,618.0" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,727.4 500,727.4 450,727.2 404,727.2" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,743.0 500,743.0 450,743.2 404,743.2" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,852.4 500,852.4 450,832.3 404,832.3" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,852.4 500,852.4 450,848.3 404,848.3" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,852.4 500,852.4 450,864.3 404,864.3" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,868.0 500,868.0 450,880.3 404,880.3" fill="none" stroke="#14917f" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,977.4 500,977.4 450,977.4 404,977.4" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1027.1 500,1027.1 450,1027.1 404,1027.1" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1102.4 500,1102.4 450,1102.2 404,1102.2" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1118.0 500,1118.0 450,1118.2 404,1118.2" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1205.4 500,1205.4 450,1197.4 404,1197.4" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1205.4 500,1205.4 450,1213.4 404,1213.4" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<polyline points="610,1265.0 500,1265.0 450,1265.0 404,1265.0" fill="none" stroke="#2a6fdb" stroke-opacity="0.55" stroke-width="1"/>
+<circle cx="610" cy="250.8" r="4.5" fill="#d9731a" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="254.8" text-anchor="end" font-size="12.5" fill="#2b2f36">Packet US West → Europe → US West</text>
+<text x="318" y="254.8" text-anchor="end" font-size="12.5" font-weight="700" fill="#d9731a">130 ms</text>
+<text x="328" y="254.8" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="254.8" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">4 yr</text>
+<circle cx="610" cy="288.4" r="4.5" fill="#d9731a" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="292.4" text-anchor="end" font-size="12.5" fill="#2b2f36">Packet US East → US West → US East</text>
+<text x="318" y="292.4" text-anchor="end" font-size="12.5" font-weight="700" fill="#d9731a">65 ms</text>
+<text x="328" y="292.4" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="292.4" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">2 yr</text>
+<circle cx="610" cy="368.0" r="4.5" fill="#d9731a" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="372.0" text-anchor="end" font-size="12.5" fill="#2b2f36">Read 1 MB sequentially from HDD</text>
+<text x="318" y="372.0" text-anchor="end" font-size="12.5" font-weight="700" fill="#d9731a">15 ms</text>
+<text x="328" y="372.0" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="372.0" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">6 mo</text>
+<circle cx="610" cy="402.1" r="4.5" fill="#d9731a" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="406.1" text-anchor="end" font-size="12.5" fill="#2b2f36">Read 1 MB sequentially from 1 GbE</text>
+<text x="318" y="406.1" text-anchor="end" font-size="12.5" font-weight="700" fill="#d9731a">8 ms</text>
+<text x="328" y="406.1" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="406.1" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">3 mo</text>
+<circle cx="610" cy="427.6" r="4.5" fill="#d9731a" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="431.6" text-anchor="end" font-size="12.5" fill="#2b2f36">HDD disk seek (7200 RPM)</text>
+<text x="318" y="431.6" text-anchor="end" font-size="12.5" font-weight="700" fill="#d9731a">5 ms</text>
+<text x="328" y="431.6" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="431.6" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">2 mo</text>
+<circle cx="610" cy="580.4" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="584.4" text-anchor="end" font-size="12.5" fill="#2b2f36">Round trip within datacenter (TCP)</text>
+<text x="318" y="584.4" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">300 μs</text>
+<text x="328" y="584.4" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="584.4" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">3.5 days</text>
+<circle cx="610" cy="618.0" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="622.0" text-anchor="end" font-size="12.5" fill="#2b2f36">Read 1 MB sequentially from NVMe</text>
+<text x="318" y="622.0" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">150 μs</text>
+<text x="328" y="622.0" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="622.0" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">1.7 days</text>
+<circle cx="610" cy="727.4" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="731.2" text-anchor="end" font-size="12.5" fill="#2b2f36">Read 1 MB sequentially from memory</text>
+<text x="318" y="731.2" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">20 μs</text>
+<text x="328" y="731.2" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="731.2" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">5.5 hr</text>
+<circle cx="610" cy="743.0" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="747.2" text-anchor="end" font-size="12.5" fill="#2b2f36">NVMe SSD random read</text>
+<text x="318" y="747.2" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">15 μs</text>
+<text x="328" y="747.2" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="747.2" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">4 hr</text>
+<circle cx="610" cy="852.4" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="836.3" text-anchor="end" font-size="12.5" fill="#2b2f36">Send 2K bytes over 10 GbE</text>
+<text x="318" y="836.3" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">2 μs</text>
+<text x="328" y="836.3" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="836.3" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">33 min</text>
+<circle cx="610" cy="852.4" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="852.3" text-anchor="end" font-size="12.5" fill="#2b2f36">Thunderbolt 4 / USB4 round trip</text>
+<text x="318" y="852.3" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">2 μs</text>
+<text x="328" y="852.3" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="852.3" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">33 min</text>
+<circle cx="610" cy="852.4" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="868.3" text-anchor="end" font-size="12.5" fill="#2b2f36">Compress 1KB (Snappy/LZ4)</text>
+<text x="318" y="868.3" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">2 μs</text>
+<text x="328" y="868.3" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="868.3" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">33 min</text>
+<circle cx="610" cy="868.0" r="4.5" fill="#14917f" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="884.3" text-anchor="end" font-size="12.5" fill="#2b2f36">InfiniBand / 100GbE ping pong</text>
+<text x="318" y="884.3" text-anchor="end" font-size="12.5" font-weight="700" fill="#14917f">1.5 μs</text>
+<text x="328" y="884.3" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="884.3" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">25 min</text>
+<circle cx="610" cy="977.4" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="981.4" text-anchor="end" font-size="12.5" fill="#2b2f36">PCIe Gen 4/5 transaction</text>
+<text x="318" y="981.4" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">200 ns</text>
+<text x="328" y="981.4" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="981.4" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">3.3 min</text>
+<circle cx="610" cy="1027.1" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1031.1" text-anchor="end" font-size="12.5" fill="#2b2f36">Main memory reference (DDR5)</text>
+<text x="318" y="1031.1" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">80 ns</text>
+<text x="328" y="1031.1" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1031.1" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">1.3 min</text>
+<circle cx="610" cy="1102.4" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1106.2" text-anchor="end" font-size="12.5" fill="#2b2f36">Mutex lock/unlock</text>
+<text x="318" y="1106.2" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">20 ns</text>
+<text x="328" y="1106.2" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1106.2" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">20 sec</text>
+<circle cx="610" cy="1118.0" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1122.2" text-anchor="end" font-size="12.5" fill="#2b2f36">L3 cache reference</text>
+<text x="318" y="1122.2" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">15 ns</text>
+<text x="328" y="1122.2" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1122.2" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">15 sec</text>
+<circle cx="610" cy="1205.4" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1201.4" text-anchor="end" font-size="12.5" fill="#2b2f36">Branch mispredict</text>
+<text x="318" y="1201.4" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">3 ns</text>
+<text x="328" y="1201.4" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1201.4" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">3 sec</text>
+<circle cx="610" cy="1205.4" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1217.4" text-anchor="end" font-size="12.5" fill="#2b2f36">L2 cache reference</text>
+<text x="318" y="1217.4" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">3 ns</text>
+<text x="328" y="1217.4" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1217.4" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">3 sec</text>
+<circle cx="610" cy="1265.0" r="4.5" fill="#2a6fdb" stroke="#fff" stroke-width="1.5"/>
+<text x="262" y="1269.0" text-anchor="end" font-size="12.5" fill="#2b2f36">L1 cache reference</text>
+<text x="318" y="1269.0" text-anchor="end" font-size="12.5" font-weight="700" fill="#2a6fdb">1 ns</text>
+<text x="328" y="1269.0" text-anchor="middle" font-size="12.5" fill="#8a8f98">/</text>
+<text x="338" y="1269.0" text-anchor="start" font-size="12.5" font-weight="600" fill="#444">1 sec</text>
+<line x1="596" x2="610" y1="1140" y2="1140" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="1130.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="1144.5" text-anchor="end" font-size="14" fill="#333">10 ns</text>
+<line x1="596" x2="610" y1="1015" y2="1015" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="1005.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="1019.5" text-anchor="end" font-size="14" fill="#333">100 ns</text>
+<line x1="596" x2="610" y1="765" y2="765" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="755.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="769.5" text-anchor="end" font-size="14" fill="#333">10 μs</text>
+<line x1="596" x2="610" y1="640" y2="640" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="630.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="644.5" text-anchor="end" font-size="14" fill="#333">100 μs</text>
+<line x1="596" x2="610" y1="390" y2="390" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="380.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="394.5" text-anchor="end" font-size="14" fill="#333">10 ms</text>
+<line x1="596" x2="610" y1="265" y2="265" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="255.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="269.5" text-anchor="end" font-size="14" fill="#333">100 ms</text>
+<line x1="596" x2="610" y1="140" y2="140" stroke="#333" stroke-width="1.5"/>
+<rect x="530.0" y="130.5" width="62" height="18" fill="#fff"/>
+<text x="590" y="144.5" text-anchor="end" font-size="14" fill="#333">1 s</text>
+<line x1="670" x2="684" y1="1140.0" y2="1140.0" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="1130.5" width="92" height="18" fill="#fff"/>
+<text x="690" y="1144.5" font-size="14" fill="#333">10 sec</text>
+<line x1="670" x2="684" y1="1042.7" y2="1042.7" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="1033.2" width="92" height="18" fill="#fff"/>
+<text x="690" y="1047.2" font-size="14" fill="#333">1 min</text>
+<line x1="670" x2="684" y1="917.7" y2="917.7" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="908.2" width="92" height="18" fill="#fff"/>
+<text x="690" y="922.2" font-size="14" fill="#333">10 min</text>
+<line x1="670" x2="684" y1="820.5" y2="820.5" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="811.0" width="92" height="18" fill="#fff"/>
+<text x="690" y="825.0" font-size="14" fill="#333">1 hour</text>
+<line x1="670" x2="684" y1="647.9" y2="647.9" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="638.4" width="92" height="18" fill="#fff"/>
+<text x="690" y="652.4" font-size="14" fill="#333">1 day</text>
+<line x1="670" x2="684" y1="542.3" y2="542.3" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="532.8" width="92" height="18" fill="#fff"/>
+<text x="690" y="546.8" font-size="14" fill="#333">1 week</text>
+<line x1="670" x2="684" y1="462.5" y2="462.5" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="453.0" width="92" height="18" fill="#fff"/>
+<text x="690" y="467.0" font-size="14" fill="#333">1 month</text>
+<line x1="670" x2="684" y1="327.6" y2="327.6" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="318.1" width="92" height="18" fill="#fff"/>
+<text x="690" y="332.1" font-size="14" fill="#333">1 year</text>
+<line x1="670" x2="684" y1="202.6" y2="202.6" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="193.1" width="92" height="18" fill="#fff"/>
+<text x="690" y="207.1" font-size="14" fill="#333">10 years</text>
+<line x1="670" x2="684" y1="140.0" y2="140.0" stroke="#333" stroke-width="1.5"/>
+<rect x="688.0" y="130.5" width="92" height="18" fill="#fff"/>
+<text x="690" y="144.5" font-size="14" fill="#333">≈ 31.7 years</text>
+<line x1="515" x2="805" y1="1265" y2="1265" stroke="#2a6fdb" stroke-width="2.5" stroke-dasharray="7 4"/>
+<rect x="606" y="1261" width="68" height="8" rx="2" fill="#2a6fdb"/>
+<circle cx="515" cy="1265" r="4" fill="#2a6fdb"/>
+<circle cx="805" cy="1265" r="4" fill="#2a6fdb"/>
+<rect x="520.0" y="1237.0" width="70" height="24" fill="#fff"/>
+<text x="588" y="1257" text-anchor="end" font-size="19" font-weight="800" fill="#2a6fdb">1 ns</text>
+<rect x="690.0" y="1237.0" width="140" height="24" fill="#fff"/>
+<text x="692" y="1257" font-size="19" font-weight="800" fill="#2a6fdb">1 sec</text>
+<line x1="515" x2="805" y1="890" y2="890" stroke="#14917f" stroke-width="2.5" stroke-dasharray="7 4"/>
+<rect x="606" y="886" width="68" height="8" rx="2" fill="#14917f"/>
+<circle cx="515" cy="890" r="4" fill="#14917f"/>
+<circle cx="805" cy="890" r="4" fill="#14917f"/>
+<rect x="520.0" y="862.0" width="70" height="24" fill="#fff"/>
+<text x="588" y="882" text-anchor="end" font-size="19" font-weight="800" fill="#14917f">1 μs</text>
+<rect x="690.0" y="862.0" width="140" height="24" fill="#fff"/>
+<text x="692" y="882" font-size="19" font-weight="800" fill="#14917f">≈ 16.6 min</text>
+<line x1="515" x2="805" y1="515" y2="515" stroke="#d9731a" stroke-width="2.5" stroke-dasharray="7 4"/>
+<rect x="606" y="511" width="68" height="8" rx="2" fill="#d9731a"/>
+<circle cx="515" cy="515" r="4" fill="#d9731a"/>
+<circle cx="805" cy="515" r="4" fill="#d9731a"/>
+<rect x="520.0" y="487.0" width="70" height="24" fill="#fff"/>
+<text x="588" y="507" text-anchor="end" font-size="19" font-weight="800" fill="#d9731a">1 ms</text>
+<rect x="690.0" y="487.0" width="140" height="24" fill="#fff"/>
+<text x="692" y="507" font-size="19" font-weight="800" fill="#d9731a">≈ 11.5 days</text>
+<line x1="596" x2="610" y1="140" y2="140" stroke="#333" stroke-width="1.5"/>
+<rect x="552.0" y="130.5" width="40" height="18" fill="#fff"/>
+<text x="590" y="144.5" text-anchor="end" font-size="14" fill="#333">1 s</text>
+<text x="885" y="1259" font-size="14" font-weight="700" fill="#2a6fdb">1 ns → 1 sec</text>
+<text x="885" y="1277" font-size="12" fill="#666">CPU-cache scale</text>
+<text x="885" y="884" font-size="14" font-weight="700" fill="#14917f">1 μs → ≈ 16.6 min</text>
+<text x="885" y="902" font-size="12" fill="#666">1,000 ns = 1,000 s</text>
+<text x="885" y="509" font-size="14" font-weight="700" fill="#d9731a">1 ms → ≈ 11.5 days</text>
+<text x="885" y="527" font-size="12" fill="#666">1,000,000 ns = 1,000,000 s</text>
+<text x="550.0" y="1316" text-anchor="middle" font-size="12" fill="#777">Data: omarish.com/latency-numbers-you-should-know · Order-of-magnitude figures; real values depend on hardware and load.</text>
+</svg>

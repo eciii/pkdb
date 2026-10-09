@@ -96,7 +96,7 @@ We can now formally state a very important principle:
 This means that EITIEs have two options:
 
 - Not use PTR records at all.
-- Use PTR records but ensure that they agree with the A records at all timees.
+- Use PTR records but ensure that they agree with the A records at all times.
 
 Now let's assume that we have an `A/PTR` relation. This condition alone allows for very wild configurations like:
 
